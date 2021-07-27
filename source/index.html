@@ -10,15 +10,15 @@
 
     <header class="page-header header wrapper">
       <a class="header__logo logo" href="#">
-        <img class="logo__image" src="../source/img/logo-image-mobile.svg" width="33" height="37" alt="Изображение логотипа Кэт энерджи">
-        <img class="logo__title" src="../source/img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
+        <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="37" alt="Изображение логотипа Кэт энерджи">
+        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
       </a>
       <button class="header__toggle"></button>
-      <nav class="header__nav nav">
+      <nav class="header__nav nav visually-hidden">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="">главная</a></li>
-          <li class="nav__item"><a class="nav__link" href="">каталог продукции</a></li>
-          <li class="nav__item"><a class="nav__link" href="">подбор программы</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">главная</a></li>
+          <li class="nav__item"><a class="nav__link" href="catalog.html">каталог продукции</a></li>
+          <li class="nav__item"><a class="nav__link" href="form.html">подбор программы</a></li>
         </ul>
       </nav>
     </header>
@@ -27,12 +27,13 @@
 <!-- main start -->
 <!-- basic-information start -->
 
-    <main class="page-main">
+    <main class="page-main wrapper">
       <h1 class="visually-hidden">Интернет-магазин функционального питания для котов "Кэт энерджи"</h1>
       <section class="basic-information">
         <h2 class="basic-information__title">Функциональное питание для котов</h2>
-        <img class="basic-information__image" src="../source/img/product-mobile.png" width="280" height="270" alt="Изображение стакана с функциональным питантием Кэт энерджи">
-        <a class="basic-information__link button" href="#">подобрать программу</a>
+        <p class="basic-information__text">Занялся собой? Займись котом!</p>
+        <img class="basic-information__image" src="img/product-mobile.png" width="280" height="270" alt="Изображение стакана с функциональным питантием Кэт энерджи">
+        <a class="basic-information__link button" href="form.html">подобрать программу</a>
       </section>
 
 <!-- basic-information end -->
@@ -44,12 +45,12 @@
           <li class="programs__item">
             <h2 class="programs__title">похудение</h2>
             <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs__link" href="">каталог slim</a>
+            <a class="programs__link" href="catalog.html#slim-link">каталог slim</a>
           </li>
           <li class="programs__item">
             <h2 class="programs__title">Набор массы</h2>
             <p class="programs__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs__link" href="">каталог pro</a>
+            <a class="programs__link" href="catalog.html#pro-link">каталог pro</a>
           </li>
         </ul>
       </section>
@@ -94,8 +95,8 @@
         <p class="example__text">15 000 РУБ.</p>
         <section class="example__slider slider">
           <h3 class="visually-hidden">Визуальный пример работы нашей программы</h3>
-          <img class="slider__image slider__image--fat" src="../source/img/slider-fat-cat.jpg" width="311" height="232" alt="Изображение жирного кота">
-          <img class="slider__image slider__image--thin visually-hidden" src="../source/img/slider-thin-cat.jpg" width="311" height="232" alt="Изображение худого кота">
+          <img class="slider__image slider__image--fat" src="img/slider-fat-cat.jpg" width="311" height="232" alt="Изображение жирного кота">
+          <img class="slider__image slider__image--thin visually-hidden" src="img/slider-thin-cat.jpg" width="311" height="232" alt="Изображение худого кота">
           <label class="">было<input class="" type="range">стало</label>
         </section>
       </section>
@@ -106,16 +107,16 @@
 <!-- main end -->
 <!-- footer start -->
 
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <section class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
         <h3 class="contacts__title">приглашаем <br>к сотрудничеству дилеров!</h3>
         <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </section>
-      <img class="map" src="../source/img/map-marker.jpg" width="320" height="362" alt="Интернет-магазин 'Кэт энерджи' находится по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+      <img class="map" src="img/map-marker.jpg" width="320" height="362" alt="Интернет-магазин 'Кэт энерджи' находится по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       <section class="footer">
         <h3 class="visually-hidden">Социальные сети</h3>
-        <img class="footer__logo logo-title" src="../source/img/logo-title.svg" width="128" height="24" alt="Логотип Кэт энерджи">
+        <img class="footer__logo logo-title" src="img/logo-title.svg" width="128" height="24" alt="Логотип Кэт энерджи">
         <ul class="footer__socials socials">
           <li class="socials__item">
               <a class="socials__link" href="#">
@@ -139,7 +140,7 @@
               </a>
           </li>
         </ul>
-        <a href="#" class="footer__link developer">HTML Academy</a>
+        <a class="footer__link developer" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </section>
     </footer>
   </body>
