@@ -5,9 +5,9 @@
   font-family: "Oswald";
   font-weight: 400;
   font-style: normal;
-  src: local("Oswald"),
-       url(fonts/oswaldregular.woff2) format(woff2),
-       url(fonts/oswaldregular.woff) format(woff);
+  src: (local("Oswald"),
+    url ("fonts/oswaldregular.woff2") format(woff2),
+    url ("fonts/oswaldregular.woff") format(woff));
 }
 
 @font-face {
@@ -15,8 +15,8 @@
   font-weight: 500;
   font-style: normal;
   src: local("Oswald"),
-       url(fonts/oswaldmedium.woff2) format(woff2),
-       url(fonts/oswaldmedium.woff) format(woff);
+    url ("fonts/oswaldregular.woff2") format(woff2),
+    url ("fonts/oswaldregular.woff") format(woff);
 }
 
 /* fonts end */
@@ -31,7 +31,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-style: normal;
@@ -62,7 +62,7 @@ img {
 }
 
 .wrapper-background {
-  background: #F2F2F2;
+  background: #f2f2f2;
 }
 
 .visually-hidden {
