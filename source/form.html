@@ -44,12 +44,12 @@
         <fieldset class="form-programs">
           <legend class="visually-hidden">Выбор программы</legend>
           <h2 class="visually-hidden">Варианты программ</h2>
-          <input type="radio" name="progpam-options" value="slimming" id="program-slim" checked>
-          <label class="radio-text" for="program-slim">похудение</label>
-          <input type="radio" name="progpam-options" value="gaining muscle mass" id="program-muscle">
-          <label class="radio-text" for="program-muscle">Набор массы</label>
-          <input type="radio" name="progpam-options" value="unknown" id="program-unknown">
-          <label class="radio-text" for="program-unknown">Не знаю (Нужен ваш совет)</label>
+          <input class="form-programs__radio-input" type="radio" name="progpam-options" value="slimming" id="program-slim" checked>
+          <label class="form-programs__radio-text" for="program-slim">похудение</label>
+          <input class="form-programs__radio-input" type="radio" name="progpam-options" value="gaining muscle mass" id="program-muscle">
+          <label class="form-programs__radio-text" for="program-muscle">Набор массы</label>
+          <input class="form-programs__radio-input" type="radio" name="progpam-options" value="unknown" id="program-unknown">
+          <label class="form-programs__radio-text" for="program-unknown">Не знаю (Нужен ваш совет)</label>
         </fieldset>
         <fieldset class="contacts-data">
           <legend class="contacts-data__subtitle">Контактные данные (владельца кота)</legend>
@@ -65,14 +65,14 @@
         <fieldset class="additionally">
           <legend class="additionally__subtitle">Дополнительно</legend>
           <h2 class="visually-hidden">Заказ дополнительных товаров</h2>
-          <input type="checkbox" name="sweetener" id="additionally-sweetener" checked>
-          <label class="checkbox-text" for="additionally-sweetener">сахарозаменитель</label>
-          <input type="checkbox" name="water" id="additionally-water">
-          <label class="checkbox-text" for="additionally-water">питьевая вода</label>
-          <input type="checkbox" name="milk" id="additionally-milk">
-          <label class="checkbox-text" for="additionally-milk">молоко</label>
-          <input type="checkbox" name="vitamins" id="additionally-vitamins">
-          <label class="checkbox-text" for="additionally-vitamins">витамины</label>
+          <input class="additionally__checkbox-input" type="checkbox" name="sweetener" id="additionally-sweetener" checked>
+          <label class="additionally__checkbox-text" for="additionally-sweetener">сахарозаменитель</label>
+          <input class="additionally__checkbox-input" type="checkbox" name="water" id="additionally-water">
+          <label class="additionally__checkbox-text" for="additionally-water">питьевая вода</label>
+          <input class="additionally__checkbox-input" type="checkbox" name="milk" id="additionally-milk">
+          <label class="additionally__checkbox-text" for="additionally-milk">молоко</label>
+          <input class="additionally__checkbox-input" type="checkbox" name="vitamins" id="additionally-vitamins">
+          <label class="additionally__checkbox-text" for="additionally-vitamins">витамины</label>
         </fieldset>
         <button class="button" type="submit" formaction="https://echo.htmlacademy.ru/">отправить заявку</button>
         <p class="form__text">* — Обязательные поля</p>
