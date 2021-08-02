@@ -1,9 +1,15 @@
 .card {
+  padding-top: 19px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+
+  &:last-child {
+    padding: 0;
+    border: none;
+  }
 }
 
 .card__title {
@@ -20,4 +26,8 @@
   line-height: 16px;
   text-align: center;
   color: #444444;
+}
+
+.card__link {
+  margin: 22px 20px;
 }
