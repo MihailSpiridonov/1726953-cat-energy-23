@@ -1,5 +1,78 @@
 
 .principle__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+  text-align: center;
+  color: #000000;
+}
+
+.principle__list {
+  list-style: none;
+}
+
+.principle__item {
+  margin-left: 100px;
+  margin-bottom: 26px;
+}
+
+.principle__text {
+  position: relative;
+  width: 200px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.principle__text::before {
+  content: "";
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 60px;
+  height: 60px;
+  background: #68b738;
+}
+
+.principle__text-1::after {
+  content: "";
+  position: absolute;
+  left: -85px;
+  top: 13px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon_leaf.svg") no-repeat;
+}
+
+.principle__text-2::after {
+  content: "";
+  position: absolute;
+  left: -85px;
+  top: 13px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon_tub.svg") no-repeat;
+}
+
+.principle__text-3::after {
+  content: "";
+  position: absolute;
+  left: -82px;
+  top: 13px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon_eat.svg") no-repeat;
+}
+
+.principle__text-4::after {
+  content: "";
+  position: absolute;
+  left: -85px;
+  top: 13px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/icon_alarm.svg") no-repeat;
 }
