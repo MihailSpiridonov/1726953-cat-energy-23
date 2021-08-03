@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.footer__logo {
+  padding-top: 39px;
+  margin-bottom: 32px;
+}
+
+.footer__link {
+  position: relative;
+  align-self: start;
+  margin-left: 20px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.footer__link::before {
+  content: "";
+  position: absolute;
+  left: 210px;
+  top: -5px;
+  width: 27px;
+  height: 35px;
+  background-image: url("../img/html_academy.svg");
+}
