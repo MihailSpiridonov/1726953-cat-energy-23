@@ -1,6 +1,12 @@
 .basic-information {
   position: relative;
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 708px;
+    min-height: 810px;
+    margin-left: 85px;
+  }
 }
 
 .basic-information__image-background {
@@ -12,26 +18,51 @@
   min-height: 302px;
   margin-bottom: 138px;
   background-image: url("../img/background-cat.jpg");
+
+  @media (min-width: 768px) {
+    width: 708px;
+    margin-bottom: 50px;
+    background: none;
+  }
 }
 
 .basic-information__title {
   width: 249px;
   min-height: 72px;
+  padding: 0;
   margin: 27 auto;
   margin-bottom: 25px;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+
+  @media (min-width: 768px) {
+    width: 414px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
 }
 
 .basic-information__text {
+  margin: 0;
+  padding: 0;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+
+  @media (min-width: 768px) {
+    width: 414px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+  }
 }
 
 .basic-information__image {
@@ -39,10 +70,24 @@
   content: "";
   top: 167px;
   left: 0;
-  order: 2;
+
+  @media (min-width: 768px) {
+    order: 2;
+  }
 }
 
 .basic-information__link {
   margin-left: 20px;
   margin-bottom: 22px;
+
+  @media (min-width: 768px) {
+    margin-left: 85px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
 }

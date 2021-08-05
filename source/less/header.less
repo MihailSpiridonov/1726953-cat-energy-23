@@ -1,8 +1,15 @@
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  align-items: center;
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: 768px) {
+    margin-bottom: 74px;
+    padding-top: 40px;
+    border: none;
+  }
 }
 
 .header__logo {
@@ -14,6 +21,11 @@
   margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 17px;
+
+  @media (min-width: 768px) {
+    padding-top: 5px;
+    min-width: 171px;
+  }
 }
 
 .header__toggle {
@@ -22,10 +34,31 @@
   padding: 2px;
   margin-top: 20px;
   background-color: #ffffff;
-  background-image: url("../img/toggle-button.svg");
   border: none;
+
+  &--open {
+    background-image: url("../img/toggle-button.svg");
+  }
+
+  &--close {
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/nav-close.svg");
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
-@media (min-width=768) {
-
+@media (max-width: 768px) {
+  .header__nav {
+    position: absolute;
+    content: "";
+    top: 64px;
+    left: 0;
+    width: 320px;
+    min-height: 198px;
+    z-index: 1;
+  }
 }

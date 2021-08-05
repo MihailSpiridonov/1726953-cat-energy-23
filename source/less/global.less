@@ -24,7 +24,7 @@
 /* global start */
 
 .page-body {
-  min-width: 320px;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0;
   min-height: 100%;
@@ -38,6 +38,10 @@
   font-weight: 400;
   box-sizing: border-box;
   color: #000000;
+
+  @media (min-width: 768px) {
+    min-width: 768px;
+  }
 }
 
 a {
@@ -59,6 +63,10 @@ img {
   width: 280px;
   margin: 0 auto;
   padding: 0;
+
+  @media (min-width: 768px) {
+    min-width: 708px;
+  }
 }
 
 .wrapper-background {
