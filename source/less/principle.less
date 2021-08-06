@@ -6,24 +6,49 @@
   line-height: 40px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: 768px) {
+    margin-bottom: 183px;
+  }
 }
 
 .principle__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .principle__item {
   position: relative;
   margin-left: 100px;
   margin-bottom: 26px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .principle__text {
   width: 200px;
   font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: 768px) {
+    width: 250px;
+    min-height: 280px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .principle__text::before {
@@ -34,6 +59,14 @@
   width: 60px;
   height: 60px;
   background-color: #68b738;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 0;
+    top: -90px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .principle__text--1::after {
@@ -45,6 +78,14 @@
   height: 60px;
   background: url("../img/icon_leaf.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 15px;
+    top: -77px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .principle__text--2::after {
@@ -56,6 +97,14 @@
   height: 60px;
   background-image: url("../img/icon_tub.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 15px;
+    top: -77px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .principle__text--3::after {
@@ -67,6 +116,14 @@
   height: 60px;
   background-image: url("../img/icon_eat.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 18px;
+    top: -77px;
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .principle__text--4::after {
@@ -78,4 +135,21 @@
   height: 60px;
   background-image: url("../img/icon_alarm.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 15px;
+    top: -77px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (min-width: 768px) {
+  .principle__text--1 {
+    background-image: url("../img/number-1.svg");
+    background-repeat: no-repeat;
+    background-size: 112px 280px;
+    background-position: 50px 0;
+  }
 }
