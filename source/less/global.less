@@ -39,7 +39,7 @@
   box-sizing: border-box;
   color: #000000;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     min-width: 768px;
   }
 }
@@ -64,8 +64,12 @@ img {
   margin: 0 auto;
   padding: 0;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     width: 708px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1220px;
   }
 }
 

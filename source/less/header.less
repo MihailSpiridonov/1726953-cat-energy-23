@@ -5,10 +5,15 @@
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     margin-bottom: 74px;
     padding-top: 40px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 124px;
+    padding-top: 69px;
   }
 }
 
@@ -22,9 +27,13 @@
   margin-top: 10px;
   margin-bottom: 17px;
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     padding-top: 5px;
     min-width: 171px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 111px;
   }
 }
 
@@ -46,12 +55,12 @@
     background-image: url("../img/nav-close.svg");
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: @tablet-width) {
     display: none;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: @tablet-width) {
   .header__nav {
     position: absolute;
     content: "";
