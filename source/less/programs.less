@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   list-style: none;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    margin-bottom: 70px;
+  }
 }
 
 .programs__item {
@@ -34,6 +39,25 @@
     margin-bottom: 74px;
     padding-top: 40px;
     border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-areas:
+      "image title"
+      "text text"
+      "link link";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 180px 1fr 110px;
+    width: 530px;
+    min-height: 374px;
+    margin: 0;
+    margin-right: 80px;
+  }
+}
+
+.programs__item:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }
 

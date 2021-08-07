@@ -4,11 +4,25 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
-  text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    background: none;
+  }
+}
+
+.example__wrapper-section {
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: #eaeaea;
+  }
 }
 
 .example__title {
+  display: inline;
+  text-align: center;
+  margin: 0;
   font-size: 36px;
   line-height: 40px;
 }
@@ -20,6 +34,10 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @desktop-width) {
+    width: 436px;
+  }
 }
 
 .example__list {
@@ -28,6 +46,10 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: @desktop-width) {
+    width: 366px;
+  }
 }
 
 .example__item {
@@ -49,10 +71,20 @@
     flex-direction: column;
     align-items: flex-end;
   }
+
+  @media (min-width: @desktop-width) {
+    width: 366px;
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 .outcome__text {
   @media (min-width: @tablet-width) {
     margin-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 63px;
   }
 }
