@@ -1,9 +1,18 @@
 .footer {
+  background-color: #f2f2f2;
+}
+
+.footer__wrapper {
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
   align-items: center;
-  background-color: #f2f2f2;
+  padding-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .footer__logo {
@@ -13,14 +22,16 @@
 
 .footer__link {
   position: relative;
-  align-self: start;
-  margin-left: 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 60px;
+  }
 }
 
 .footer__link::before {
@@ -31,4 +42,8 @@
   width: 27px;
   height: 35px;
   background-image: url("../img/html_academy.svg");
+
+  @media (min-width: @tablet-width) {
+    left: 150px;
+  }
 }
