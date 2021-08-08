@@ -1,9 +1,31 @@
-.assortiment,
-.assortiment__item {
+.assortiment {
   padding-bottom: 25px;
-  border-bottom: 1px solid #ebebeb;
 }
 
 .assortiment__list {
+  display: grid;
+  grid-template-columns: 1fr;
   list-style: none;
+
+  @media (min-width: @tablet-width) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.assortiment__item {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    width: 324px;
+    border: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 245px;
+  }
 }

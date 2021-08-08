@@ -17,8 +17,25 @@
   text-transform: uppercase;
 }
 
+.form__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+  }
+}
+
 .form__button {
   margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 61px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 81px;
+  }
 }
 
 .form__text {
