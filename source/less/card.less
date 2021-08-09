@@ -1,10 +1,14 @@
 .card {
   padding-top: 19px;
   padding-bottom: 25px;
-  border-bottom: 1px solid #ebebeb;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+  }
 
   &:last-child {
     padding: 0;
@@ -30,4 +34,10 @@
 
 .card__link {
   margin: 22px 20px;
+
+  @media (min-width: @desktop-width) {
+    width: 168px;
+    min-height: 40px;
+    margin: 35px auto;
+  }
 }

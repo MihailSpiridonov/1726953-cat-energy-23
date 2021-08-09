@@ -9,13 +9,22 @@
 }
 
 .additional__list {
-  list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 36px;
+  list-style: none;
 }
 
 .additional__item {
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+    border: 1px solid #ebebeb;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: auto;
+  }
 }

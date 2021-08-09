@@ -1,8 +1,21 @@
 .contacts-background {
   background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
 }
 
 .contacts-background__wrapper {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 26px;
+
+  @media (min-width: @desktop-width) {
+    width: 430px;
+    min-height: 100px;
+    padding: 70px 50px;
+  }
 }

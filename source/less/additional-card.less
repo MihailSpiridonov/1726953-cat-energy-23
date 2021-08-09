@@ -1,4 +1,25 @@
+.additional-card {
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "cost cost"
+    "link link";
+  grid-template-columns: 1fr 1fr;
+
+  @media (min-width: @tablet-width) {
+    grid-template-areas:
+      "title cost"
+      "link link";
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-template: 1fr 1fr 1fr;
+    grid-template-areas: "title cost link";
+  }
+}
+
 .additional-card__title {
+  grid-area: title;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -8,4 +29,12 @@
   text-align: center;
   text-transform: uppercase;
   color: #222222;
+}
+
+.additional-card__cost {
+  grid-area: cost;
+}
+
+.additional-card__link {
+  grid-area: link;
 }
