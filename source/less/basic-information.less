@@ -1,6 +1,7 @@
 .basic-information {
   position: relative;
   color: #ffffff;
+  width: 100vw;
 
   @media (min-width: @tablet-width) {
     min-height: 810px;
@@ -43,7 +44,8 @@
   width: 249px;
   min-height: 72px;
   padding: 0;
-  margin: 27px auto;
+  margin: auto;
+  margin-top: 27px;
   margin-bottom: 25px;
   font-style: normal;
   font-weight: normal;
@@ -62,8 +64,11 @@
 }
 
 .basic-information__text {
-  margin: 0;
+  display: block;
+  width: 200px;
+  min-height: 15px;
   padding: 0;
+  margin: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -82,7 +87,7 @@
   position: absolute;
   content: "";
   top: 167px;
-  left: 0;
+  left: 10%;
   width: 280px;
   height: 270px;
 
