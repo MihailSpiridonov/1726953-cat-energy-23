@@ -1,5 +1,6 @@
 .example {
   padding: 20px;
+  padding-top: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -21,13 +22,18 @@
 
 .example__title {
   display: inline;
-  text-align: center;
-  margin: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
   font-size: 36px;
   line-height: 40px;
+  text-align: center;
+  color: #000000;
 }
 
 .example__text {
+  padding-top: 22px;
+  margin-bottom: 25px;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -43,9 +49,13 @@
 .example__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  min-width: 280px;
   padding: 0;
+  margin: 0;
+  margin-bottom: 42px;
   list-style: none;
+  outline: 5px solid fade(rgb(248, 36, 36), 50%);
+  outline-offset: -5px;
 
   @media (min-width: @desktop-width) {
     width: 366px;
@@ -53,8 +63,8 @@
 }
 
 .example__item {
-  margin-left: auto;
-  margin-right: auto;
+  outline: 5px solid fade(rgb(12, 199, 59), 50%);
+  outline-offset: -5px;
 }
 
 .example__result {
@@ -66,7 +76,6 @@
   justify-content: center;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 42px;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
