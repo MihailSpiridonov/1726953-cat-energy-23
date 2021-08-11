@@ -18,12 +18,9 @@
     "image title"
     "text text"
     "link link";
-  grid-template-columns: 75px 1fr;
-  grid-template-rows: 90px 1fr 55px;
-  width: 240px;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: min-content 1fr min-content;
   padding: 20px;
-  margin: 0;
-  margin-left: 20px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
 
@@ -67,6 +64,9 @@
 
 .programs__title {
   grid-area: title;
+  min-width: auto;
+  margin-left: auto;
+  margin-right: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
@@ -76,7 +76,9 @@
 
 .programs__text {
   grid-area: text;
-  width: 227px;
+  min-width: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
   font-family: "Arial", sans-serif;
   font-style: normal;
