@@ -1,6 +1,9 @@
 .logo {
   display: flex;
-  flex-wrap: wrap;
+
+  @media (min-width: @tablet-width) {
+    justify-content: space-between;
+  }
 }
 
 .logo__title {
