@@ -6,6 +6,10 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
+  @media (min-width: @tablet-width) {
+    width: 81vw;
+  }
+
   @media (min-width: @desktop-width) {
     width: 430px;
     min-height: 100px;
@@ -23,15 +27,43 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    min-height: 83px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+
+.contacts__address-wrapper {
+  width: 50%;
+  min-height: 60px;
+
+  @media (min-width: @tablet-width) {
+    width: 30%;
+    min-height: 80px;
+    text-align: right;
+  }
 }
 
 .contacts__address {
-  width: 50%;
-  min-height: 60px;
+  padding: 0;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+  }
+}
+
+.contacts__address--street {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 15px;
+  }
 }

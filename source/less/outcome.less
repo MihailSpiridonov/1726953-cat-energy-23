@@ -1,3 +1,9 @@
+.outcome {
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+}
+
 .outcome__value {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -7,11 +13,18 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    margin-top: 10px;
+    text-align: start;
+    font-size: 20px;
+  }
 }
 
 .outcome__text {
   @media (min-width: @tablet-width) {
-    margin-bottom: 9px;
+    margin-bottom: 0;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,18 +1,54 @@
 .slider {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+  }
+}
+
+.slider__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    min-height: 462px;
+  }
 }
 
 .slider__image {
   width: 311px;
   height: 232px;
-  margin-bottom: 28px;
+  margin-bottom: 32px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: -250px;
+    width: 100%;
+    height: 590px;
+  }
 }
 
-.slider__result {
+.slider__result-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
   padding-bottom: 20px;
   padding-left: 7px;
+
+  @media (min-width: @tablet-width) {
+    width: 81%;
+    padding-left: 3px;
+    margin-top: auto;
+    margin-bottom: 42px;
+  }
+}
+
+.slider__text {
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -21,10 +57,63 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.slider__input {
-  width: 84px;
-  margin-left: 20px;
-  margin-right: 15px;
+.slider__range-controls {
+  position: relative;
+  align-self: flex-end;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    align-self: center;
+    width: 73%;
+  }
+}
+
+.slider__scale {
+  width: 100%;
+  height: 14px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    height: 6px;
+    margin-left: 10px;
+    margin-right: 5px;
+    background-color: #dcdcdc;
+    border-radius: 6px;
+  }
+}
+
+.slider__toggle {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: 50% - 45px;
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 50% - 2px;
+    width: 5px;
+    height: 10px;
+    box-shadow: 0 0 0 10px #ffffff;
+    border-radius: 50%;
+    background-color: #68b738;
+  }
 }

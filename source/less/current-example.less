@@ -1,18 +1,28 @@
 .current-example {
   position: relative;
-  width: 122px;
-  height: 45px;
+  min-width: 122px;
+  min-height: 45px;
   padding-top: 10px;
   margin: 0;
   margin-right: auto;
   margin-bottom: 20px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    min-width: 162px;
+    height: 60px;
+    margin: 0;
+  }
 }
 
 .current-example:last-child {
   margin-left: auto;
   margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }
 
 .current-example__number {
@@ -25,6 +35,11 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .current-example__clarification {
@@ -44,4 +59,21 @@
   text-align: center;
   color: #444444;
   background-color: #eaeaea;
+
+  @media (min-width: @tablet-width) {
+    top: 43px;
+    left: 14px;
+    min-width: 114px;
+    padding: 8px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  &--2 {
+    @media (min-width: @tablet-width) {
+      left: 5px;
+      min-width: 140px;
+    }
+  }
 }
