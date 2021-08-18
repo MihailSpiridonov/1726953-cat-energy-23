@@ -1,3 +1,5 @@
+/* stylelint-disable */
+
 const nav = document.querySelector(".nav");
 const headerToggle = document.querySelector(".header__toggle");
 
