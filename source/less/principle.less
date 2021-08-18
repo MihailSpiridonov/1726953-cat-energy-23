@@ -6,6 +6,12 @@
     margin-bottom: 42px;
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (min-width: @desktop-width) {
+    min-height: 370px;
+    margin-bottom: 45px;
+    border: none;
+  }
 }
 
 .principle__title {
@@ -47,6 +53,7 @@
   @media (min-width: @desktop-width) {
     flex-direction: row;
     grid-template-columns: repeat(4, 1fr);
+    column-gap: 6%;
   }
 }
 
@@ -61,10 +68,10 @@
     padding: 0;
     padding-top: -150px;
     padding-bottom: 60px;
+  }
 
-    .principle__item:last-child {
-      margin: 0;
-    }
+  .principle__item:last-child {
+    margin: 0;
   }
 }
 
@@ -117,6 +124,10 @@
     padding-top: 146px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 100%;
   }
 }
 

@@ -4,10 +4,21 @@
   @media (min-width: @tablet-width) {
     justify-content: space-between;
   }
+
+  @media (min-width: @desktop-width) {
+    justify-content: flex-start;
+    width: 202px;
+  }
 }
 
 .logo__title {
+  width: 101px;
   height: 18px;
+
+  @media (min-width: @desktop-width) {
+    width: 115px;
+    margin-left: 12px;
+  }
 }
 
 .logo-vk {

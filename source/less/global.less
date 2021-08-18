@@ -60,21 +60,24 @@ img {
 }
 
 .wrapper {
+  min-width: 280px;
   width: 87.5vw;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: @tablet-width) {
+    min-width: 708px;
     width: 92vw;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 1220px;
     width: 84.7vw;
   }
 }
 
 .wrapper-background {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {

@@ -13,7 +13,7 @@
   @media (min-width: @tablet-width) {
     width: 45%;
     padding-top: 15px;
-    margin-right: 40px;
+    margin-right: 55px;
     border: none;
     text-align: start;
   }
@@ -26,7 +26,38 @@
     margin-right: 20px;
   }
 
+  @media (min-width: @desktop-width) {
+    margin-right: 24px;
+  }
+
   &:last-child {
     margin-right: 0;
+  }
+}
+
+.socials__item:hover .socials__logo path {
+  @media (min-width: @tablet-width) {
+    &:hover {
+      fill: #68b738;
+      background-color: #f2f2f2;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+.logo-fs path {
+  @media (min-width: @tablet-width) {
+    &:hover {
+      color: #f2f2f2;
+      background-color: #f2f2f2;
+      border: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

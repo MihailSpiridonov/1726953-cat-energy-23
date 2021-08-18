@@ -8,12 +8,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 630px;
-    margin-bottom: 82px;
-    background-image: url("../img/background-cat.jpg");
-    background-repeat: no-repeat;
-    background-size: 720px 694px;
-    background-position: 100% 0;
+    min-height: 286px;
   }
 }
 
@@ -35,7 +30,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 80px;
+    background: none;
+    padding: 0;
   }
 }
 
@@ -47,6 +43,7 @@
   margin: auto;
   margin-top: 26px;
   margin-bottom: 25px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -63,6 +60,13 @@
     line-height: 60px;
     color: #000000;
     text-align: start;
+
+    @media (min-width: @desktop-width) {
+      width: 40%;
+      padding: 0;
+      margin-left: 6.5%;
+      margin-bottom: 38px;
+    }
   }
 }
 
@@ -85,6 +89,12 @@
     line-height: 20px;
     color: #000000;
     text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    padding: 0;
+    margin-left: 6.5%;
   }
 }
 
@@ -125,6 +135,15 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   @media (min-width: @desktop-width) {

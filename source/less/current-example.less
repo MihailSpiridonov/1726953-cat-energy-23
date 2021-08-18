@@ -70,10 +70,23 @@
     background-color: #ffffff;
   }
 
+  @media (min-width: @desktop-width) {
+    top: 43px;
+    left: 22px;
+    min-width: 97px;
+    background-color: #f2f2f2;
+  }
+
   &--2 {
     @media (min-width: @tablet-width) {
       left: 5px;
       min-width: 140px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: 10px;
+      min-width: 127px;
+      background-color: #f2f2f2;
     }
   }
 }

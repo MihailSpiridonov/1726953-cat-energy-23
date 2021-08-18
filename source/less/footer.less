@@ -4,6 +4,10 @@
   @media (min-width: @tablet-width) {
     min-height: 150px;
   }
+
+  @media (min-width: @desktop-width) {
+    transform: translateY(-23px);
+  }
 }
 
 .footer__wrapper {
@@ -18,6 +22,10 @@
     align-items: baseline;
     padding-top: 45px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+  }
 }
 
 .footer__logo {
@@ -31,6 +39,15 @@
     height: 24px;
     margin-right: 73px;
     text-align: end;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }
 
@@ -53,10 +70,16 @@
   text-transform: none;
 
   @media (min-width: @tablet-width) {
+    align-self: center;
     transform: none;
     width: 163px;
-    margin-right: 0;
-    padding-left: 10px;
+    margin-right: 5px;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -72,6 +95,10 @@
   background-image: url("../img/html_academy.svg");
 
   @media (min-width: @tablet-width) {
-    left: 140px;
+    left: 130px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 145px;
   }
 }
