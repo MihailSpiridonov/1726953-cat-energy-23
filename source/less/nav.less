@@ -5,11 +5,7 @@
 }
 
 .nav--open-mobile {
-  display: inline-block;
-}
-
-.nav--open {
-  @media (min-width: @tablet-width) {
+  @media (max-width: @mobile-width-only) {
     display: inline-block;
   }
 }
@@ -17,6 +13,12 @@
 .nav--close-mobile {
   @media (max-width: @mobile-width-only) {
     display: none;
+  }
+}
+
+.nav--open {
+  @media (min-width: @tablet-width) {
+    display: inline-block;
   }
 }
 
@@ -105,6 +107,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #000000;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: auto;
@@ -112,14 +115,12 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 24px;
-    cursor: pointer;
 
     &:hover {
       opacity: 0.6;
     }
 
-    &:focus {
-      outline: none;
+    &:active {
       opacity: 0.3;
     }
   }
