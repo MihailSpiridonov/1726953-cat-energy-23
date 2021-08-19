@@ -263,3 +263,39 @@
     right: 12px;
   }
 }
+
+.programs__link:hover.programs__link::before {
+  top: 2px;
+  right: -4px;
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/arrow-long.svg");
+
+  @media (min-width: @tablet-width) {
+    top: 12px;
+    right: -6px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 16px;
+    right: -2px;
+  }
+}
+
+.programs__link--pro:hover.programs__link--pro::before {
+  top: 2px;
+  right: -2px;
+  width: 32px;
+  height: 12px;
+  background-image: url("../img/arrow-long.svg");
+
+  @media (min-width: @tablet-width) {
+    top: 8px;
+    right: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 8px;
+    right: 4px;
+  }
+}
