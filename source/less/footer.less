@@ -1,5 +1,13 @@
 .footer {
   background-color: #f2f2f2;
+
+  @media (min-width: @tablet-width) {
+    min-height: 150px;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: translateY(-23px);
+  }
 }
 
 .footer__wrapper {
@@ -12,38 +20,95 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
+    padding-top: 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
   }
 }
 
 .footer__logo {
+  width: 128px;
+  height: 24px;
   padding-top: 39px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 128px;
+    height: 24px;
+    margin-right: 85px;
+    text-align: end;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 88px;
+  }
+}
+
+.footer__socials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
 }
 
 .footer__link {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  transform: translateY(-20px);
+  width: 100%;
+  padding-top: 17px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 23%;
+    margin-top: 37px;
+    margin-bottom: auto;
+
+    @media (min-width: @desktop-width) {
+      width: 13.5%;
+      margin-top: 46px;
+      margin-bottom: auto;
+    }
+  }
+}
+
+.footer__text {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   color: #444444;
-
-  @media (min-width: @tablet-width) {
-    padding-right: 60px;
-  }
+  text-transform: none;
 }
 
-.footer__link::before {
-  position: absolute;
-  content: "";
-  left: 210px;
-  top: -5px;
+.footer__image {
+  align-self: flex-end;
+  transform: translateY(-5px);
   width: 27px;
-  height: 35px;
-  background-image: url("../img/html_academy.svg");
+  height: 34px;
+}
 
-  @media (min-width: @tablet-width) {
-    left: 150px;
-  }
+.footer__link:hover path {
+  fill: #68b738;
 }

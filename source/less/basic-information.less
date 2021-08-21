@@ -1,18 +1,14 @@
 .basic-information {
   position: relative;
   color: #ffffff;
+  width: 100vw;
 
   @media (min-width: @tablet-width) {
     min-height: 810px;
   }
 
   @media (min-width: @desktop-width) {
-    min-height: 630px;
-    margin-bottom: 82px;
-    background-image: url("../img/background-cat.jpg");
-    background-repeat: no-repeat;
-    background-size: 720px 694px;
-    background-position: 100% 0;
+    min-height: 286px;
   }
 }
 
@@ -23,47 +19,63 @@
   flex-wrap: wrap;
   min-width: 320px;
   min-height: 302px;
-  margin-bottom: 138px;
+  margin-bottom: 136px;
   background-image: url("../img/background-cat.jpg");
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
     min-height: 165px;
-    margin-bottom: 49px;
+    margin-bottom: 50px;
     background: none;
   }
 
   @media (min-width: @desktop-width) {
-    margin-left: 80px;
+    background: none;
+    padding: 0;
   }
 }
 
 .basic-information__title {
   display: block;
-  width: 249px;
+  width: 89%;
   min-height: 72px;
   padding: 0;
-  margin: 27px auto;
+  margin: auto;
+  margin-top: 26px;
   margin-bottom: 25px;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 414px;
+    width: 70%;
     margin: 0;
     padding: 0;
-    margin-bottom: 40px;
+    margin-left: 12%;
+    margin-bottom: 44px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    text-align: start;
+
+    @media (min-width: @desktop-width) {
+      width: 40%;
+      padding: 0;
+      margin-left: 6.5%;
+      margin-bottom: 38px;
+    }
   }
 }
 
 .basic-information__text {
-  margin: 0;
+  display: block;
+  width: 200px;
+  min-height: 15px;
   padding: 0;
+  margin: auto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -72,9 +84,17 @@
 
   @media (min-width: @tablet-width) {
     width: 414px;
+    margin-left: 12%;
     font-size: 20px;
     line-height: 20px;
     color: #000000;
+    text-align: start;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 40%;
+    padding: 0;
+    margin-left: 6.5%;
   }
 }
 
@@ -82,7 +102,8 @@
   position: absolute;
   content: "";
   top: 167px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-140px);
   width: 280px;
   height: 270px;
 
@@ -104,8 +125,9 @@
   margin-bottom: 22px;
 
   @media (min-width: @tablet-width) {
-    margin: 0;
     z-index: 1;
+    margin: 0;
+    margin-left: 12.5%;
     font-style: normal;
     font-weight: normal;
     font-size: 20px;
@@ -113,6 +135,15 @@
     text-align: center;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   @media (min-width: @desktop-width) {

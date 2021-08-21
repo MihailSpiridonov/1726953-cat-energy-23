@@ -27,7 +27,7 @@
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  min-width: 280px;
+  min-width: 320px;
   min-height: 100%;
   margin: 0 auto;
   padding: 0;
@@ -60,21 +60,24 @@ img {
 }
 
 .wrapper {
-  width: 280px;
+  min-width: 280px;
+  width: 87.5vw;
   margin: 0 auto;
   padding: 0;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    min-width: 708px;
+    width: 92vw;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    min-width: 1220px;
+    width: 84.7vw;
   }
 }
 
 .wrapper-background {
-  background: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
