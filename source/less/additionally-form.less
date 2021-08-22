@@ -1,6 +1,24 @@
-.additionally-form {
+.additionally-form__wrapper {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 40px;
   border: none;
+}
+
+.additionally-form__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 55%;
+  z-index: -1;
+  width: 550px;
+  height: 2px;
+  background-color: #68b738;
+}
+
+.additionally-form {
+  width: 89vw;
 }
 
 .additionally-form__subtitle {
@@ -16,10 +34,13 @@
   }
 }
 
-.additionally-form__wrapper {
+.additionally-form__list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
@@ -32,8 +53,37 @@
   }
 }
 
+.additionally-form__checkbox-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
 .additionally-form__checkbox-text {
+  position: relative;
+  padding-left: 43px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.additionally-form__checkbox-text::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  left: -3px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+}
+
+.additionally-form__checkbox-input:checked + .additionally-form__checkbox-text::after {
+  position: absolute;
+  content: "";
+  top: 6px;
+  left: 5px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/check-marker.svg");
 }

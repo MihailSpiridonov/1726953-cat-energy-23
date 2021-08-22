@@ -86,10 +86,20 @@
   margin-right: 0;
 }
 
+.nav__item--form:last-child {
+  @media (min-width: @tablet-width) {
+    margin-left: 3px;
+  }
+}
+
 .nav__item--active {
   @media (min-width: @tablet-width) {
     padding-bottom: 10px;
     border-bottom: 2px solid #68b738;
+
+    &--form {
+      padding-bottom: 8px;
+    }
   }
 
   @media (min-width: @desktop-width) {

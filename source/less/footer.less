@@ -1,6 +1,11 @@
 .footer {
   background-color: #f2f2f2;
 
+  &--form {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 150px;
   }
@@ -15,6 +20,11 @@
   flex-direction: column;
   align-items: center;
   padding-bottom: 32px;
+
+  &--form {
+    width: 89vw;
+    transform: translateX(-3px);
+  }
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
@@ -34,6 +44,10 @@
   padding-top: 39px;
   margin-bottom: 20px;
   cursor: pointer;
+
+  &--form {
+    padding-top: 35px;
+  }
 
   @media (min-width: @tablet-width) {
     width: 128px;
@@ -107,6 +121,7 @@
   transform: translateY(-5px);
   width: 27px;
   height: 34px;
+  margin-right: 3px;
 }
 
 .footer__link:hover path {

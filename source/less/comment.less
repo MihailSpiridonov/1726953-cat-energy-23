@@ -1,7 +1,7 @@
-.comment {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+.comment__wrapper {
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-bottom: 25px;
   border: none;
 
@@ -10,7 +10,26 @@
   }
 }
 
+.comment__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 15px;
+  left: 50%;
+  z-index: -1;
+  width: 550px;
+  height: 2px;
+  background-color: #68b738;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 89vw;
+}
+
 .comment__subtitle {
+  margin-bottom: 35px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -20,6 +39,7 @@
 }
 
 .comment__text {
+  height: 130px;
   padding: 10px 15px;
   font-size: 16px;
   line-height: 18px;
