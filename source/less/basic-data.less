@@ -3,12 +3,15 @@
 .basic-data--wrapper {
   padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 20px;
+  margin-bottom: 29px;
   border: none;
   border-bottom: 1px solid #d9d9d9;
 
-  @media (min-width: @tablet-width) {
-    margin-bottom: 45px;
+  @media (min-width: @form-tablet-width) {
+    padding: 0;
+    margin: 0;
+    padding-top: 2px;
+    margin-bottom: 28px;
     border: none;
   }
 
@@ -22,15 +25,13 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding: 0;
-  padding-left: 5px;
   padding-bottom: 24px;
   margin: 0;
 
   @media (min-width: @form-tablet-width) {
-    min-width: 630px;
-    width: 82vw;
+    transform: translateX(-13px);
     margin: 0 auto;
-    padding-left: 5px;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -41,10 +42,14 @@
 .basic-data__wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
-  margin-bottom: 7px;
+  margin-bottom: 13px;
+
+  &--last {
+    margin-bottom: 0;
+  }
 
   @media (min-width: @form-tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
@@ -52,36 +57,12 @@
   }
 }
 
-.basic-data__name {
-  min-width: 51px;
-  text-transform: uppercase;
-  color: #444444;
-
-  @media (min-width: @form-tablet-width) {
-    min-width: 62px;
-  }
-}
-
-.basic-data__weight {
-  min-width: 75px;
-
-  @media (min-width: @form-tablet-width) {
-    min-width: 94px;
-  }
-}
-
-.basic-data__age {
-  min-width: 108px;
-
-  @media (min-width: @form-tablet-width) {
-    min-width: 133px;
-  }
-}
-
 .basic-data__label {
   padding: 0;
-  padding-top: 16px;
+  padding-left: 5px;
+  padding-top: 14px;
   margin: 0;
+  margin-right: 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -91,7 +72,8 @@
   color: #444444;
 
   @media (min-width: @form-tablet-width) {
-    padding-top: 12px;
+    padding-top: 8px;
+    margin-right: 3px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -101,16 +83,42 @@
   }
 }
 
-.basic-data__wrapper--last {
-  margin-bottom: 0;
+.basic-data__name {
+  min-width: 39px;
+  text-transform: uppercase;
+  color: #444444;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 62px;
+    padding-top: 7px;
+  }
+}
+
+.basic-data__weight {
+  min-width: 66px;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 94px;
+  }
+}
+
+.basic-data__age {
+  min-width: 96px;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 132px;
+  }
 }
 
 .basic-data__label + input {
-  height: 45px;
+  height: 39px;
   padding-left: 15px;
+  margin-right: 5px;
   text-transform: uppercase;
 
   @media (min-width: @form-tablet-width) {
+    height: 42px;
+    padding-left: 15px;
     font-size: 20px;
     line-height: 30px;
   }

@@ -1,7 +1,7 @@
 .form-programs__wrapper {
-  padding-top: 5px;
+  padding-top: 0;
   padding-bottom: 0;
-  margin-bottom: 17px;
+  margin-bottom: 0;
   border: none;
   border-bottom: 1px solid #d9d9d9;
 
@@ -19,10 +19,11 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-left: 20px;
-  padding-bottom: 10px;
 
   @media (min-width: @form-tablet-width) {
-    padding: 30px 28px;
+    transform: translateX(-13px);
+    padding: 28px;
+    padding-bottom: 29px;
     border: 1px solid #e7e7e7;
     box-sizing: border-box;
   }
@@ -36,7 +37,7 @@
 
 .form-programs__radio-text {
   position: relative;
-  padding-left: 30px;
+  padding-left: 31px;
   margin-bottom: 25px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
@@ -74,7 +75,8 @@
   box-sizing: border-box;
 
   @media (min-width: @form-tablet-width) {
-    left: 0;
+    top: -4px;
+    left: -1px;
     width: 40px;
     height: 40px;
   }
@@ -95,8 +97,8 @@
   background-color: #68b738;
 
   @media (min-width: @form-tablet-width) {
-    top: 4px;
-    left: 11.5px;
+    top: 7px;
+    left: 10.5px;
     width: 18px;
     height: 18px;
   }

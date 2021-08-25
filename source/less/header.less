@@ -11,12 +11,15 @@
   }
 
   @media (min-width: @tablet-width) {
-    padding-left: 0;
+    width: 92vw;
+    padding: 0;
     padding-top: 20px;
-    margin-left: 0;
+    margin-left: auto;
     margin-right: auto;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
     border: none;
+    outline: 2px solid rgba(238, 255, 0, 0.8);
+    outline-offset: -2px;
   }
 
   @media (min-width: @desktop-width) {
@@ -30,9 +33,13 @@
 }
 
 .header--form {
+  padding-right: 0;
+  margin-right: 0;
   margin-bottom: 2px;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @form-tablet-width) {
+    width: 92vw;
+    margin: 0 auto;
     margin-bottom: 15px;
   }
 }
@@ -51,14 +58,13 @@
 
   @media (min-width: @tablet-width) {
     min-width: min-content;
-    width: 22%;
+    width: 21.5%;
     padding-top: 0;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-left: 0; //
     margin-right: 85px;
-
-    &--form {
-      width: 21.5%;
-    }
+    outline: 2px solid rgba(0, 255, 0, 0.8);
+    outline-offset: -2px;
 
     &:hover {
       opacity: 0.8;
@@ -75,11 +81,23 @@
   }
 }
 
+.header__logo--form {
+  width: 21.5%;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: min-content;
+    width: 21%;
+    padding: 0;
+    padding-top: 2px;
+    margin-right: 85px;
+  }
+}
+
 .header__toggle {
   position: absolute;
   content: "";
   bottom: 0;
-  right: 0;
+  left: 0;
   width: 25px;
   height: 18px;
   padding: 2px;
@@ -108,16 +126,30 @@
 }
 
 .header__toggle--form {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 25px;
+  height: 18px;
+  padding: 2px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+
   &-close {
     top: 0;
-    left: 100% - 2px;
+    left: 100% - 14px;
     background-image: url("../img/nav-close.svg");
+    background-repeat: no-repeat;
   }
 
   &-open {
     top: 3px;
-    left: 100% - 16px;
+    left: 100% - 14px;
     background-image: url("../img/toggle-button.svg");
+    background-repeat: no-repeat;
   }
 
   @media (min-width: @tablet-width) {
@@ -138,9 +170,19 @@
 
   @media (min-width: @tablet-width) {
     width: 63%;
+    margin: 0;
+    padding: 0;
+    outline: 2px solid rgba(30, 255, 0, 0.8);
+    outline-offset: -2px;
   }
 
   @media (min-width: @desktop-width) {
     width: 50%;
+  }
+}
+
+.header__nav--form {
+  @media (min-width: @form-tablet-width) {
+    margin-right: 11px;
   }
 }
