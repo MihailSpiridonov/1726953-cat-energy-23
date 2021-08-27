@@ -19,6 +19,18 @@
   width: 550px;
   height: 2px;
   background-color: #68b738;
+
+  @media (min-width: @form-tablet-width) {
+    top: 23px;
+    left: 30%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 23px;
+    left: 46%;
+    min-width: 780px;
+    width: 100vw;
+  }
 }
 
 .contacts-data__wrapper::after {
@@ -32,6 +44,10 @@
     height: 2px;
     background-color: #68b738;
   }
+
+  @media (min-width: @desktop-width) {
+    right: 95%;
+  }
 }
 
 .contacts-data {
@@ -43,11 +59,12 @@
 
   @media (min-width: @form-tablet-width) {
     width: 82vw;
-    padding-right: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 67px;
+    margin-bottom: 0;
   }
 }
 
@@ -69,20 +86,22 @@
     width: 88%;
     padding-left: 0;
     padding-right: 40px;
-    margin-bottom: 75px;
+    margin-bottom: 73px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 0;
+    width: 45%;
+    padding-right: 0;
+    margin-bottom: 76px;
   }
 }
 
 .contacts-data__list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 12px;
+  gap: 14px;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -90,13 +109,13 @@
   @media (min-width: @form-tablet-width) {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 18px;
+    gap: 21px;
     padding: 2px 0;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 77px;
   }
 }
 
@@ -118,7 +137,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    //gap: 80px;
+    left: 93.5%;
   }
 }
 
@@ -132,6 +151,10 @@
   top: 15px;
   width: 20px;
   height: 22px;
+
+  @media (min-width: @desktop-width) {
+    top: 13px;
+  }
 }
 
 .contacts-data__label {
@@ -160,7 +183,9 @@
   min-width: 50px;
 
   @media (min-width: @form-tablet-width) {
-    min-width: 85px;
+    min-width: 63px;
+    width: 32%;
+    margin-right: 9px;
   }
 
   @media (min-width: @desktop-width) {
@@ -172,6 +197,7 @@
   height: 41px;
   padding-left: 13px;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: @form-tablet-width) {
     height: 47px;

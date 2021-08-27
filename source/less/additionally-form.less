@@ -8,6 +8,10 @@
   @media (min-width: @form-tablet-width) {
     margin-bottom: 60px;
   }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 65px;
+  }
 }
 
 .additionally-form__wrapper::before {
@@ -19,6 +23,18 @@
   width: 550px;
   height: 2px;
   background-color: #68b738;
+
+  @media (min-width: @form-tablet-width) {
+    top: 23px;
+    left: 41%;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 24px;
+    left: 25%;
+    min-width: 780px;
+    width: 100vw;
+  }
 }
 
 .additionally-form__wrapper::after {
@@ -32,6 +48,11 @@
     height: 2px;
     background-color: #68b738;
   }
+
+  @media (min-width: @desktop-width) {
+    top: 24px;
+    right: 95%;
+  }
 }
 
 .additionally-form {
@@ -42,6 +63,10 @@
     transform: translateX(-13px);
     width: 82vw;
     padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: none;
   }
 }
 
@@ -62,6 +87,10 @@
     margin-bottom: 62px;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 64px;
   }
 }
 
@@ -106,6 +135,10 @@
   @media (min-width: @form-tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    //padding-top: 5px;
   }
 }
 

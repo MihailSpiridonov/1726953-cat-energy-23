@@ -16,11 +16,11 @@
         <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="37" alt="Изображение логотипа Кэт энерджи">
         <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
       </a>
-      <button class="header__toggle"></button>
-      <nav class="header__nav nav">
+      <button class="header__toggle header__toggle--close"></button>
+      <nav class="header__nav nav nav--nojs">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link" href="index.html">главная</a></li>
-          <li class="nav__item"><a class="nav__link" href="#">каталог продукции</a></li>
+          <li class="nav__item nav__item--active"><a class="nav__link" href="#">каталог продукции</a></li>
           <li class="nav__item"><a class="nav__link" href="form.html">подбор программы</a></li>
         </ul>
       </nav>
@@ -30,153 +30,171 @@
 <!-- main start -->
 <!-- assortiment start -->
 
-    <main class="catalog-page-main catalog wrapper">
-      <h1 class="catalog__title">Каталог продукции</h1>
+    <main class="catalog-page-main catalog">
+      <div class="catalog__title-wrapper">
+        <h1 class="catalog__title wrapper">Каталог продукции</h1>
+      </div>
       <section class="assortiment">
         <h2 class="visually-hidden">Наши товары</h2>
         <ul class="assortiment__list">
           <li class="assortiment__item card" id="pro-link">
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
-            <img class="card__image" src="img/chicken-small.jpg" width="68" height="86" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом курицы, порция 500 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">500 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Курица</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">700 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--chicken-500" src="img/chicken-small.jpg" width="68" height="86" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом курицы, порция 500 грамм">
+              <h3 class="card__title">Cat Energy PRO 500 г</h3>
+              <table class="card__characteristics">
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">500 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Курица</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">700 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card">
-            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-            <img class="card__image" src="img/chicken-big.jpg" width="84" height="100" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом курицы, порция 1000 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">1000 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Курица</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">1000 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--chicken-1000" src="img/chicken-big.jpg" width="84" height="100" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом курицы, порция 1000 грамм">
+              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+              <table class="card__characteristics">
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">1000 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Курица</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">1000 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card">
-            <h3 class="card__title">Cat Energy PRO 500 г</h3>
-            <img class="card__image" src="img/fish-small.jpg" width="68" height="78" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом рыбы, порция 500 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">500 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Рыба</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">700 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--fish-500" src="img/fish-small.jpg" width="68" height="78" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом рыбы, порция 500 грамм">
+              <h3 class="card__title">Cat Energy PRO 500 г</h3>
+              <table class="card__characteristics">
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">500 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Рыба</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">700 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card">
-            <h3 class="card__title">Cat Energy PRO 1000 г</h3>
-            <img class="card__image" src="img/fish-big.jpg" width="84" height="101" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом рыбы, порция 1000 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">1000 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Рыба</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">1000 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--fish-1000" src="img/fish-big.jpg" width="84" height="101" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом рыбы, порция 1000 грамм">
+              <h3 class="card__title">Cat Energy PRO 1000 г</h3>
+              <table class="card__characteristics">
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">1000 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Рыба</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">1000 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card" id="slim-link">
-            <h3 class="card__title">Cat Energy slim 500 г</h3>
-            <img class="card__image" src="img/buckwheat-small.jpg" width="68" height="78" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом гречки, порция 500 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">500 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Гречка</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">400 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--buckwheat-500" src="img/buckwheat-small.jpg" width="68" height="78" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом гречки, порция 500 грамм">
+              <table class="card__characteristics">
+                <h3 class="card__title">Cat Energy slim 500 г</h3>
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">500 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Гречка</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">400 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card">
-            <h3 class="card__title">Cat Energy slim 500 г</h3>
-            <img class="card__image" src="img/buckwheat-big.jpg" width="84" height="100" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом гречки, порция 1000 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">1000 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Гречка</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">700 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--buckwheat-1000" src="img/buckwheat-big.jpg" width="84" height="100" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом гречки, порция 1000 грамм">
+              <h3 class="card__title">Cat Energy slim 500 г</h3>
+              <table class="card__characteristics">
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">1000 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Гречка</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">700 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card">
-            <h3 class="card__title">Cat Energy slim 500 г</h3>
-            <img class="card__image" src="img/rice-small.jpg" width="72" height="84" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом риса, порция 500 грамм">
-            <table class="card__characteristics">
-              <tr class="card__line">
-                <td class="card__title">Масса</td>
-                <td class="card__value">500 г</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Вкус</td>
-                <td class="card__value">Рис</td>
-              </tr>
-              <tr class="card__line">
-                <td class="card__title">Цена</td>
-                <td class="card__value">500 Р.</td>
-              </tr>
-            </table>
-            <a class="card__link button" href="#">заказать</a>
+            <div class="card__wrapper wrapper">
+              <img class="card__image card__image--rice-500" src="img/rice-small.jpg" width="72" height="84" alt="Изображение стакана функционального питантия Кэт энерджи со вкусом риса, порция 500 грамм">
+              <h3 class="card__title">Cat Energy slim 500 г</h3>
+              <table class="card__characteristics">
+                <tr class="card__line">
+                  <td class="card__subtitle">Масса</td>
+                  <td class="card__value">500 г</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Вкус</td>
+                  <td class="card__value">Рис</td>
+                </tr>
+                <tr class="card__line">
+                  <td class="card__subtitle">Цена</td>
+                  <td class="card__value">500 Р.</td>
+                </tr>
+              </table>
+              <a class="card__link button" href="#">заказать</a>
+            </div>
           </li>
           <li class="assortiment__item card lastcard">
-            <h2 class="visually-hidden">Показать другие основные товары</h2>
-            <svg class="lastcard__image" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Изображение знака плюс">
-              <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
-              <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
-            </svg>
-            <h3 class="lastcard__title">Показать еще 100500 товаров</h3>
-            <p class="lastcard__text">На самом деле вкусов гораздо больше!</p>
-            <a class="lastcard__link button lastcard__button" href="#">показать все</a>
+            <div class="card__wrapper wrapper">
+              <h2 class="visually-hidden">Показать другие основные товары</h2>
+              <svg class="lastcard__image" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Изображение знака плюс">
+                <line x1="15" x2="15" y2="30" stroke="#D3D3D3" stroke-width="2"/>
+                <line x1="30" y1="15" y2="15" stroke="#D3D3D3" stroke-width="2"/>
+              </svg>
+              <h3 class="lastcard__title">Показать еще 100500 товаров</h3>
+              <p class="lastcard__text">На самом деле вкусов гораздо больше!</p>
+              <a class="lastcard__link button lastcard__button" href="#">показать все</a>
+            </div>
           </li>
         </ul>
       </section>
@@ -285,5 +303,6 @@
         </div>
       </section>
     </footer>
+    <script src="js/nav.js"></script>
   </body>
 </html>

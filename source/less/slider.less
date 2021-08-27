@@ -6,13 +6,13 @@
     margin: 0;
     padding: 0;
     background-color: #eaeaea;
-    outline: 2px solid rgba(255, 0, 0, 0.8);
-    outline-offset: -2px;
   }
 
   @media (min-width: @desktop-width) {
     width: 95%;
     height: 100%;
+    margin-right: 0;
+    margin-left: auto;
     background-color: #f2f2f2;
   }
 }
@@ -25,13 +25,13 @@
   @media (min-width: @tablet-width) {
     position: relative;
     min-height: 462px;
-    outline: 2px solid rgba(174, 0, 255, 0.8);
-    outline-offset: -2px;
   }
 
   @media (min-width: @desktop-width) {
     width: 55%;
     min-height: 430px;
+    margin-left: 1.5%;
+    margin-right: auto;
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: -20px;
+    left: 50% - 20px;
     top: -150px;
     width: 50%;
     height: 462px;
@@ -75,13 +75,16 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    width: 90%;
+    width: 91%;
+    padding-top: 5px;
     margin-top: auto;
     margin-bottom: 70px;
     font-size: 20px;
     line-height: 30px;
-    outline: 2px solid rgba(0, 4, 255, 0.8);
-    outline-offset: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -94,11 +97,13 @@
 
   @media (min-width: @tablet-width) {
     min-width: 428px;
-    width: 65%;
+    width: 67%;
     margin-left: 14px;
     margin-right: 25px;
-    outline: 2px solid rgba(0, 153, 255, 0.8);
-    outline-offset: -2px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 30px;
   }
 }
 
@@ -144,6 +149,16 @@ input[type=range]::-webkit-slider-thumb {
   border-radius: 6px;
   background-color: #68b738;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: 213px;
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
+    box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
+  }
 }
 
 /* All the same stuff for Firefox */
@@ -153,6 +168,14 @@ input[type=range]::-moz-range-thumb {
   border-radius: 6px;
   background: #68b738;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    width: 8px;
+    height: 8px;
+    background-color: #68b738;
+    border-radius: 50%;
+    box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
+  }
 }
 
 /* Создание стилей для бегунка end */
@@ -169,10 +192,23 @@ input[type=range]::-webkit-slider-runnable-track {
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    min-width: 428px;
+    width: 67%;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dcdcdc;
+  }
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-color: #dcdcdc;
+  }
 }
 
 input[type=range]::-moz-range-track {
@@ -182,32 +218,63 @@ input[type=range]::-moz-range-track {
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    min-width: 428px;
+    width: 67%;
+    height: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #dcdcdc;
+  }
 }
 
 input[type=range]::-ms-track {
   width: 84px;
   height: 14px;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    min-width: 428px;
+    width: 67%;
+    height: 6px;
+  }
 }
 
 input[type=range]::-ms-fill-lower {
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    background-color: #dcdcdc;
+  }
 }
 
 input[type=range]:focus::-ms-fill-lower {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-color: #dcdcdc;
+  }
 }
 
 input[type=range]::-ms-fill-upper {
   background-color: #ffffff;
   border-radius: 6px;
   border: 1px solid #cdcdcd;
+
+  @media (min-width: @tablet-width) {
+    background-color: #dcdcdc;
+  }
 }
 
 input[type=range]:focus::-ms-fill-upper {
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    background-color: #dcdcdc;
+  }
 }
 
 /* Создание стилей для дорожки диапозона end */

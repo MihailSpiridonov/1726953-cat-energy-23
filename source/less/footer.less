@@ -37,18 +37,28 @@
 .footer__wrapper--form {
   width: 89vw;
   transform: translateX(-3px);
+
+  @media (min-width: @form-tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1220px;
+    width: 84.7vw;
+  }
 }
 
 .footer__logo {
   width: 128px;
   height: 24px;
-  padding-top: 39px;
+  padding-top: 38px;
   margin-bottom: 20px;
   cursor: pointer;
 
   @media (min-width: @tablet-width) {
     width: 128px;
     height: 24px;
+    padding-top: 35px;
     margin-right: 85px;
     text-align: end;
 
@@ -62,6 +72,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 40px;
     margin-right: 88px;
   }
 }
@@ -71,7 +82,13 @@
   padding-left: 3px;
 
   @media (min-width: @form-tablet-width) {
+    height: min-content;
+    padding-top: 31px;
     padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 43px;
   }
 }
 
@@ -90,9 +107,8 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  transform: translateY(-20px);
   width: 100%;
-  padding-top: 17px;
+  padding-top: 0;
   cursor: pointer;
 
   &:active {
@@ -114,11 +130,18 @@
 
 .footer__link--form {
   padding-left: 5px;
-  padding-top: 19px;
+  padding-top: 0;
 
   @media (min-width: @form-tablet-width) {
+    transform: translateY(-3px);
     width: 23%;
+    height: min-content;
     padding: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: none;
+    width: 13%;
   }
 }
 
@@ -134,10 +157,10 @@
 
 .footer__image {
   align-self: flex-end;
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   width: 27px;
   height: 34px;
-  margin-right: 3px;
+  margin-right: 1px;
 }
 
 .footer__image--form {

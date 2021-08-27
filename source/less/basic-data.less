@@ -1,8 +1,7 @@
 /* stylelint-disable */
 
 .basic-data--wrapper {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0;
   margin-bottom: 29px;
   border: none;
   border-bottom: 1px solid #d9d9d9;
@@ -16,6 +15,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 46.7%;
     margin-bottom: 0;
   }
 }
@@ -29,12 +29,13 @@
   margin: 0;
 
   @media (min-width: @form-tablet-width) {
-    transform: translateX(-13px);
     margin: 0 auto;
     padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 570px;
+    width: 46.7%;
     margin-bottom: 0;
   }
 }
@@ -42,24 +43,23 @@
 .basic-data__wrapper {
   display: grid;
   grid-template-columns: min-content 1fr;
-  margin-bottom: 13px;
-
-  &--last {
-    margin-bottom: 0;
-  }
+  margin-bottom: 16px;
 
   @media (min-width: @form-tablet-width) {
     margin-bottom: 23px;
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
+
+  &--last {
     margin-bottom: 0;
   }
 }
 
 .basic-data__label {
   padding: 0;
-  padding-left: 5px;
   padding-top: 14px;
   margin: 0;
   margin-right: 12px;
@@ -73,12 +73,15 @@
 
   @media (min-width: @form-tablet-width) {
     padding-top: 8px;
-    margin-right: 3px;
+    margin-right: 0;
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 9px;
+    padding-left: 0;
+    margin-right: 3px;
     margin-bottom: 0;
   }
 }
@@ -89,16 +92,16 @@
   color: #444444;
 
   @media (min-width: @form-tablet-width) {
-    min-width: 62px;
+    min-width: 64px;
     padding-top: 7px;
   }
 }
 
 .basic-data__weight {
-  min-width: 66px;
+  min-width: 63px;
 
   @media (min-width: @form-tablet-width) {
-    min-width: 94px;
+    min-width: 95px;
   }
 }
 
@@ -106,21 +109,27 @@
   min-width: 96px;
 
   @media (min-width: @form-tablet-width) {
-    min-width: 132px;
+    min-width: 134px;
   }
 }
 
 .basic-data__label + input {
   height: 39px;
   padding-left: 15px;
-  margin-right: 5px;
   text-transform: uppercase;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: @form-tablet-width) {
-    height: 42px;
-    padding-left: 15px;
+    height: 45px;
+    padding-left: 18px;
+    margin-right: 0;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 46px;
+    padding-left: 17px;
   }
 }
 

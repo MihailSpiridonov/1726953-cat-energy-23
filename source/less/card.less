@@ -1,9 +1,7 @@
 .card {
-  padding-top: 19px;
-  padding-bottom: 25px;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2px;
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: @tablet-width) {
@@ -16,24 +14,117 @@
   }
 }
 
+.card__wrapper {
+  padding-top: 5px;
+  padding-bottom: 22px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.card__image {
+  float: left;
+  padding-top: 30px;
+  margin-left: 35px;
+}
+
+.card__image--chicken-500 {
+  width: 68px;
+  height: 86px;
+  margin-right: 35px;
+}
+
+.card__image--chicken-1000 {
+  width: 84px;
+  height: 100px;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+.card__image--fish-500 {
+  width: 68px;
+  height: 78px;
+  margin-right: 35px;
+}
+
+.card__image--fish-1000 {
+  width: 84px;
+  height: 101px;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+.card__image--buckwheat-500 {
+  width: 68px;
+  height: 78px;
+  margin-right: 35px;
+}
+
+.card__image--buckwheat-1000 {
+  width: 84px;
+  height: 100px;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+.card__image--rice-500 {
+  width: 72px;
+  height: 84px;
+  margin-right: 33px;
+}
+
 .card__title {
+  display: inline-block;
+  width: 30%;
+  min-width: 80px;
+  padding: 0;
+  margin-bottom: 10px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: left;
   color: #222222;
+  outline: 2px solid rgba(43, 255, 0, 0.8);
+  outline-offset: -2px;
 }
 
-.card__title,
+.card__characteristics {
+  width: 50%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 19px;
+  outline: 2px solid rgba(43, 255, 0, 0.8);
+  outline-offset: -2px;
+}
+
+.card__line {
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card__subtitle,
 .card__value {
+  padding: 0;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 16px;
-  text-align: center;
+  text-align: right;
   color: #444444;
 }
 
+.card__subtitle {
+  text-align: left;
+}
+
 .card__link {
-  margin: 22px 20px;
+  font-size: 16px;
+  line-height: 20px;
 
   @media (min-width: @desktop-width) {
     width: 168px;
