@@ -1,10 +1,22 @@
 .catalog {
-  outline: 2px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -2px;
+  margin-bottom: 4px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 82px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 85px;
+  }
 }
 
 .catalog__title-wrapper {
   border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    border: none;
+    margin-bottom: 123px;
+  }
 }
 
 .catalog__title {
@@ -18,6 +30,8 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    border: none;
+    padding-top: 2px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }

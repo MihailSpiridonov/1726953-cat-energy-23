@@ -1,10 +1,76 @@
+.cost {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 5px;
+    margin-right: 10.5%;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 288px;
+    width: 32%;
+  }
+}
+
+.cost__product {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    width: auto;
+  }
+}
+
 .cost__text,
 .cost__price {
+  padding: 0;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   align-items: center;
+  text-align: left;
   color: #444444;
+
+  @media (min-width: @tablet-width) {
+    min-width: 135px;
+    padding-right: 27px;
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: @desktop-width) {
+    text-align: left;
+  }
+}
+
+.cost__text--sweetener {
+  @media (min-width: @tablet-width) {
+    padding-right: 24px;
+  }
+}
+
+.cost__text--water {
+  @media (min-width: @tablet-width) {
+    padding-right: 30px;
+  }
+}
+
+.cost__text--vitamins {
+  @media (min-width: @tablet-width) {
+    padding-right: 26px;
+  }
+}
+
+.cost__price {
+  text-align: right;
+
+  @media (min-width: @tablet-width) {
+    min-width: 40px;
+    padding-right: 0;
+  }
 }

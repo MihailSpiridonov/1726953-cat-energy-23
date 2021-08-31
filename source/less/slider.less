@@ -59,6 +59,7 @@
 }
 
 .slider__result {
+  position: relative;
   width: 80%;
   padding-left: 0;
   padding-right: 0;
@@ -87,6 +88,55 @@
     margin-bottom: 55px;
   }
 }
+
+.slider__result::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 6%;
+    min-width: 45px;
+    height: 1px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 3.5%;
+  }
+}
+
+.slider__result:hover.slider__result::after {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.slider__result:active.slider__result::after {
+  border-bottom: none;
+}
+
+.slider__result::before {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 86.5%;
+    min-width: 45px;
+    height: 1px;
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 89%;
+  }
+}
+
+.slider__result:hover.slider__result::before {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.slider__result:active.slider__result::before {
+  border-bottom: none;
+}
+
 
 .slider__result .slider__input {
   position: relative;
@@ -159,6 +209,10 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 50%;
     box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
   }
+
+  :active {
+    box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #68b738;
+  }
 }
 
 /* All the same stuff for Firefox */
@@ -175,6 +229,10 @@ input[type=range]::-moz-range-thumb {
     background-color: #68b738;
     border-radius: 50%;
     box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
+  }
+
+  :active {
+    box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #68b738;
   }
 }
 

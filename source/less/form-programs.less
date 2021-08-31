@@ -59,6 +59,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #222222;
+  cursor: pointer;
 
   @media (min-width: @form-tablet-width) {
     width: 60%;
@@ -98,6 +99,20 @@
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
   }
+}
+
+.form-programs__radio-text:hover.form-programs__radio-text::before {
+  border: 1px solid #bababa;
+}
+
+.form-programs__radio-text[disabled].form-programs__radio-text::before,
+.form-programs__radio-text[disabled] {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.form-programs__radio-text[disabled].form-programs__radio-text::before {
+  border: 1px solid #bababa;
 }
 
 .form-programs__radio-input:checked + .form-programs__radio-text::after {
