@@ -16,7 +16,7 @@
         <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="37" alt="Изображение логотипа Кэт энерджи">
         <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
       </a>
-      <button class="header__toggle--form header__toggle--form-open"></button>
+      <button class="header__toggle header__toggle--form header__toggle--form-open"></button>
       <nav class="header__nav nav nav--close-mobile nav--nojs">
         <ul class="nav__list">
           <li class="nav__item nav__item--form"><a class="nav__link nav__link--form" href="index.html">главная</a></li>
@@ -38,9 +38,9 @@
           <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         </div>
         <div class="wrapper-basic-data-and-programs wrapper">
-          <fieldset class="basic-data--wrapper">
+          <fieldset class="outer-wrap outer-wrap--basic-data">
+            <legend class="visually-hidden">Основные данные</legend>
             <div class="basic-data form-wrapper">
-              <legend class="visually-hidden">Основные данные</legend>
               <h2 class="visually-hidden">Основные данные в анкете</h2>
               <div class="basic-data__wrapper">
                 <label class="basic-data__label basic-data__name" for="input-basic-data-name">ИМЯ:*</label>
@@ -48,17 +48,17 @@
               </div>
               <div class="basic-data__wrapper">
                 <label class="basic-data__label basic-data__weight" for="input-basic-data-weight">Вес (кг):*</label>
-                <input class="basic-data__input--number" id="input-basic-data-weight" type="number" step="1" min="1" max="100" placeholder="7">
+                <input class="basic-data__input basic-data__input--number" id="input-basic-data-weight" type="number" step="1" min="1" max="100" placeholder="7">
               </div>
               <div class="basic-data__wrapper basic-data__wrapper--last">
                 <label class="basic-data__label basic-data__age" for="input-basic-data-age">Возраст (лет):</label>
-                <input class="basic-data__input--number" id="input-basic-data-age" type="number" step="1" min="1" max="100" placeholder="7">
+                <input class="basic-data__input basic-data__input--number" id="input-basic-data-age" type="number" step="1" min="1" max="100" placeholder="7">
               </div>
             </div>
           </fieldset>
-          <fieldset class="form-programs__wrapper">
+          <fieldset class="outer-wrap outer-wrap--form-programs">
+            <legend class="visually-hidden">Выбор программы</legend>
             <div class="form-programs form-wrapper">
-              <legend class="visually-hidden">Выбор программы</legend>
               <h2 class="visually-hidden">Варианты программ</h2>
               <input class="form-programs__radio-input" type="radio" name="progpam-options" value="slimming" id="program-slim" checked>
               <label class="form-programs__radio-text" for="program-slim">похудение</label>
@@ -69,10 +69,10 @@
             </div>
           </fieldset>
         </div>
-        <fieldset class="contacts-data__wrapper">
+        <fieldset class="outer-wrap outer-wrap--contacts-data">
+          <legend class="visually-hidden">Контактные данные</legend>
           <div class="contacts-data form-wrapper">
-            <legend class="contacts-data__subtitle">Контактные данные (владельца кота)</legend>
-            <h2 class="visually-hidden">Ваши контактные данные</h2>
+            <h2 class="contacts-data__subtitle">Контактные данные (владельца кота)</h2>
             <ul class="contacts-data__list">
               <li class="contacts-data__item contacts-data__item--email">
                 <label class="contacts-data__label contacts-data__email" for="input-contacts-data-email">E-mail:*</label>
@@ -85,17 +85,17 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="comment__wrapper">
+        <fieldset class="outer-wrap outer-wrap--comment">
+          <legend class="visually-hidden">Ваши комментарии</legend>
           <div class="comment form-wrapper">
-            <legend class="comment__subtitle">Комментарий</legend>
-            <h2 class="visually-hidden">Ваши комментарии</h2>
+            <h2 class="comment__subtitle">Комментарий</h2>
             <textarea class="comment__text" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </fieldset>
-        <fieldset class="additionally-form__wrapper">
+        <fieldset class="outer-wrap outer-wrap--additionally-form">
+          <legend class="visually-hidden">Заказ дополнительных товаров</legend>
           <div class="additionally-form form-wrapper">
-            <legend class="additionally-form__subtitle">Дополнительно</legend>
-            <h2 class="visually-hidden">Заказ дополнительных товаров</h2>
+            <h2 class="additionally-form__subtitle">Дополнительно</h2>
             <ul class="additionally-form__list">
               <li class="additionally-form__item">
                 <input class="additionally-form__checkbox-input" id="additionally-form-input-checkbox-input-sweetener" type="checkbox" name="sweetener" checked>
@@ -116,7 +116,7 @@
             </ul>
           </div>
         </fieldset>
-        <div class="form__wrapper--button form-wrapper">
+        <div class="form__wrapper form__wrapper--button form-wrapper">
           <button class="form__button button" type="submit" formaction="https://echo.htmlacademy.ru/">отправить заявку</button>
           <p class="form__text">* — Обязательные поля</p>
         </div>
@@ -128,7 +128,7 @@
 <!-- footer start -->
 
     <footer class="page-footer page-footer--form">
-      <div class="contacts-wrapper--form">
+      <div class="contacts-wrapper contacts-wrapper--form">
         <section class="page-footer__contacts contacts contacts--form form-wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <h3 class="contacts__title contacts__title--form">приглашаем <br>к сотрудничеству дилеров!</h3>
