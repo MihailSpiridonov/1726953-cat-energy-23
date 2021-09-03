@@ -3,20 +3,51 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  width: 89vw;
   padding-top: 10px;
   padding-bottom: 10px;
 
   @media (min-width: @tablet-width) {
+    min-width: 625px;
     width: 81vw;
     padding-top: 8px;
-    margin-left: 6%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
-    width: 30%;
+    min-width: 470px;
+    width: 25%;
     min-height: 100px;
-    padding: 35px 50px;
-    background: #ffffff;
+    padding-top: 45px;
+    padding-bottom: 37px;
+    padding-right: 28px;
+    padding-left: 78px;
+    background-color: #ffffff;
+  }
+}
+
+.contacts--form {
+  padding-top: 9px;
+  padding-left: 2px;
+  margin: 0 auto;
+
+  @media (min-width: @form-tablet-width) {
+    width: 81px;
+    padding-top: 38px;
+    padding-bottom: 37px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 470px;
+    width: 25%;
+    min-height: 100px;
+    padding-top: 45px;
+    padding-bottom: 37px;
+    padding-right: 28px;
+    padding-left: 78px;
+    background-color: #ffffff;
   }
 }
 
@@ -39,8 +70,14 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 50%;
-    margin-right: 33px;
+    width: 40%;
+    margin-right: 1px;
+  }
+}
+
+.contacts__title--form {
+  @media (min-width: @form-tablet-width) {
+    padding-top: 2px;
   }
 }
 
@@ -49,6 +86,9 @@
   min-height: 60px;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 30%;
     min-height: 80px;
     text-align: right;
@@ -56,8 +96,21 @@
 
   @media (min-width: @desktop-width) {
     width: 40%;
-    margin-right: auto;
+    margin-right: 30px;
     text-align: left;
+  }
+}
+
+.contacts__address-wrapper--form {
+  @media (min-width: @form-tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 3px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: 31px;
   }
 }
 
@@ -73,11 +126,5 @@
 
   @media (min-width: @tablet-width) {
     font-size: 16px;
-  }
-}
-
-.contacts__address--street {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 15px;
   }
 }

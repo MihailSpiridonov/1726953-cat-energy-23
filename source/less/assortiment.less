@@ -1,18 +1,38 @@
 .assortiment {
-  padding-bottom: 25px;
+  margin-bottom: 26px;
+  border-bottom: 1px solid #ebebeb;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 39px;
+    border-bottom: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 39px;
+  }
 }
 
 .assortiment__list {
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0;
+  margin: 0;
   list-style: none;
 
   @media (min-width: @tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    gap: 139.5px 60px;
+    min-width: 708px;
+    width: 92vw;
+    margin: 0 30px;
   }
 
   @media (min-width: @desktop-width) {
     grid-template-columns: repeat(4, 1fr);
+    gap: 138px 80px;
+    min-width: 1220px;
+    width: 84.7vw;
+    margin: 0 auto;
   }
 }
 
@@ -21,11 +41,12 @@
   border-bottom: 1px solid #ebebeb;
 
   @media (min-width: @tablet-width) {
-    width: 324px;
-    border: none;
+    width: 323px;
+    border: #f2f2f2;
   }
 
   @media (min-width: @desktop-width) {
     width: 245px;
+    padding-bottom: 0;
   }
 }

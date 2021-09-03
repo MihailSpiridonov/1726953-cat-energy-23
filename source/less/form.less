@@ -1,45 +1,125 @@
 .form {
-  margin-bottom: 39px;
+  width: 100vw;
+  margin-bottom: 35px;
+  padding-bottom: 0;
+
+  @media (min-width: @form-tablet-width) {
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.form__wpapper {
+  width: 87.5vw;
+  padding-left: 0;
+  margin: 0 auto;
+  margin-bottom: 40px;
+
+  @media (min-width: @form-tablet-width) {
+    width: 82vw;
+    padding-left: 0;
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 84.7vw;
+  }
 }
 
 .form__title {
+  margin-bottom: 38px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+
+  @media (min-width: @form-tablet-width) {
+    margin-bottom: 55px;
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .form__subtitle {
+  width: 90%;
+  padding: 0;
+  margin: 0;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: @form-tablet-width) {
+    width: 55%;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 32%;
+  }
 }
 
-.form__wrapper {
+.form__wrapper--button {
   display: flex;
   flex-direction: column;
+  width: 89vw;
+  padding-left: 3px;
+  padding-bottom: 0;
+  margin: 0 auto;
 
-  @media (min-width: @tablet-width) {
+  @media (min-width: @form-tablet-width) {
     flex-direction: row;
+    width: 82vw;
+    padding-left: 1px;
   }
 }
 
 .form__button {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
 
-  @media (min-width: @tablet-width) {
-    margin-right: 61px;
+  @media (min-width: @form-tablet-width) {
+    width: 282px;
+    height: 52px;
+    margin-right: 63px;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 0px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 
   @media (min-width: @desktop-width) {
+    width: 568px;
     margin-right: 81px;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
 .form__text {
-  margin-bottom: 32px;
+  transform: translateX(-3px);
+  padding: 0;
+  margin: 0;
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -48,4 +128,14 @@
   align-items: center;
   text-align: center;
   color: #000000;
+
+  @media (min-width: @form-tablet-width) {
+    transform: none;
+    padding-top: 15px;
+    font-size: 16px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 20px;
+  }
 }

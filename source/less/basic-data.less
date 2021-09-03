@@ -1,27 +1,48 @@
+/* stylelint-disable */
+
 .basic-data {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  padding: 0;
   padding-bottom: 24px;
-  margin-bottom: 25px;
-  border: none;
-  border-bottom: 1px solid #d9d9d9;
+  margin: 0;
 
-  @media (min-width: @tablet-width) {
-    border: none;
+  @media (min-width: @form-tablet-width) {
+    margin: 0 auto;
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 570px;
+    width: 46.7%;
     margin-bottom: 0;
   }
 }
 
-.basic-data__name {
-  text-transform: uppercase;
-  color: #444444;
+.basic-data__wrapper {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  margin-bottom: 16px;
+
+  @media (min-width: @form-tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 22px;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
 }
 
 .basic-data__label {
+  padding: 0;
+  padding-top: 14px;
+  margin: 0;
+  margin-right: 12px;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -29,8 +50,107 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+
+  @media (min-width: @form-tablet-width) {
+    padding-top: 8px;
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 9px;
+    padding-left: 0;
+    margin-right: 3px;
+    margin-bottom: 0;
+  }
 }
 
-.basic-data__label input {
-  width: auto;
+.basic-data__name {
+  min-width: 39px;
+  text-transform: uppercase;
+  color: #444444;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 64px;
+    padding-top: 7px;
+  }
+}
+
+.basic-data__weight {
+  min-width: 63px;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 95px;
+  }
+}
+
+.basic-data__age {
+  min-width: 96px;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 134px;
+  }
+}
+
+.basic-data__label + input {
+  height: 39px;
+  padding-left: 15px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: @form-tablet-width) {
+    height: 45px;
+    padding-left: 18px;
+    margin-right: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 46px;
+    padding-left: 17px;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    border: 2px solid #444444;
+  }
+}
+
+// класс для некорректного значения
+
+.error-input,
+.basic-data__label + input:invalid {
+  border: 2px solid #ff8282;
+}
+
+// убираем дефолтные стрелки на input(type="number")
+// Chrome:
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+// Firefox:
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+}
+// другиe
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }

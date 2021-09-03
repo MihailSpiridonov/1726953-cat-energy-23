@@ -1,8 +1,15 @@
 .wrapper-basic-data-and-programs {
+  padding-bottom: 0;
+  margin-bottom: 26px;
+
+  @media (min-width: @form-tablet-width) {
+    margin-bottom: 75px;
+  }
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 80px;
-    margin-bottom: 69px;
+    margin-bottom: 46px;
   }
 }

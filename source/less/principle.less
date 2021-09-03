@@ -1,9 +1,11 @@
 .principle {
   min-height: 400px;
+  margin: 0;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
-    min-height: 730px;
-    margin-bottom: 42px;
+    min-height: 735px;
+    margin-bottom: 40px;
     border-bottom: 1px solid #e6e6e6;
   }
 
@@ -79,29 +81,29 @@
   .principle__item--1 {
     background-image: url("../img/number-1.svg");
     background-repeat: no-repeat;
-    background-size: 112px 280px;
-    background-position: 87px 20px;
+    background-size: 70px 230px;
+    background-position: 125px 50px;
   }
 
   .principle__item--2 {
     background-image: url("../img/number-2.svg");
     background-repeat: no-repeat;
-    background-size: 100px 280px;
-    background-position: 130px 20px;
+    background-size: 110px 230px;
+    background-position: 125px 50px;
   }
 
   .principle__item--3 {
     background-image: url("../img/number-3.svg");
     background-repeat: no-repeat;
-    background-size: 95px 280px;
-    background-position: 130px 20px;
+    background-size: 110px 230px;
+    background-position: 125px 50px;
   }
 
   .principle__item--4 {
     background-image: url("../img/number-4.svg");
     background-repeat: no-repeat;
-    background-size: 105px 280px;
-    background-position: 130px 20px;
+    background-size: 110px 230px;
+    background-position: 130px 50px;
   }
 }
 
@@ -216,6 +218,10 @@
     width: 80px;
     height: 80px;
   }
+
+  @media (min-width: @desktop-width) {
+    left: 30px;
+  }
 }
 
 .principle__text--4::after {
@@ -233,5 +239,9 @@
     top: 60px;
     width: 80px;
     height: 80px;
+  }
+
+  @media (min-width: @desktop-width) {
+    left: 30px;
   }
 }

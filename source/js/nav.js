@@ -16,4 +16,4 @@ if (nav.classList.contains('nav--close-mobile')) {
       headerToggle.classList.remove('header__toggle--close');
       headerToggle.classList.add('header__toggle--open');
     }
-});
+  });

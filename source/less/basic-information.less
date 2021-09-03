@@ -1,14 +1,17 @@
 .basic-information {
   position: relative;
-  color: #ffffff;
   width: 100vw;
+  color: #ffffff;
 
   @media (min-width: @tablet-width) {
+    width: 100vw;
     min-height: 810px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     min-height: 286px;
+    margin-bottom: 265px;
   }
 }
 
@@ -18,9 +21,12 @@
   align-items: center;
   flex-wrap: wrap;
   min-width: 320px;
+  width: 100vw;
   min-height: 302px;
   margin-bottom: 136px;
   background-image: url("../img/background-cat.jpg");
+  background-color: rgba(104, 183, 56, 0.85);
+  background-repeat: no-repeat;
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
@@ -55,7 +61,7 @@
     margin: 0;
     padding: 0;
     margin-left: 12%;
-    margin-bottom: 44px;
+    margin-bottom: 40px;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -84,7 +90,7 @@
 
   @media (min-width: @tablet-width) {
     width: 414px;
-    margin-left: 12%;
+    margin-left: 12.5%;
     font-size: 20px;
     line-height: 20px;
     color: #000000;

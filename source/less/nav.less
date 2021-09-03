@@ -37,7 +37,7 @@
     flex-direction: row;
     justify-content: flex-start;
     width: 100%;
-    padding-top: 7px;
+    padding-top: 10px;
     margin-right: auto;
     border: none;
   }
@@ -46,6 +46,11 @@
     justify-content: flex-end;
     padding-top: 15px;
   }
+}
+
+.nav__list--form {
+  margin: 0;
+  padding: 0;
 }
 
 .nav__item {
@@ -60,9 +65,9 @@
   @media (min-width: @tablet-width) {
     width: 155px;
     min-height: 20px;
-    padding: 5px;
+    padding: 3px;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 24px;
     border: none;
   }
 
@@ -71,8 +76,30 @@
     min-height: 30px;
     padding: 0;
     margin: 0;
-    margin-right: 32px;
+    margin-right: 27px;
     background-color: rgba(104, 183, 56, 0.1);
+  }
+}
+
+.nav__item--form {
+  @media (min-width: @desktop-width) {
+    margin-right: 24px;
+    background: none;
+
+    &:first-child {
+      margin-right: 36px;
+    }
+  }
+}
+
+.nav__item--catalog {
+  @media (min-width: @desktop-width) {
+    margin-right: 24px;
+    background: none;
+
+    &:first-child {
+      margin-right: 33px;
+    }
   }
 }
 
@@ -84,6 +111,19 @@
 
 .nav__item:last-child {
   margin-right: 0;
+
+  @media (min-width: @tablet-width) {
+    padding-left: 6px;
+    padding-right: 0;
+  }
+}
+
+.nav__item--form:last-child {
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    padding-left: 2px;
+    margin-left: 3px;
+  }
 }
 
 .nav__item--active {
@@ -94,8 +134,29 @@
 
   @media (min-width: @desktop-width) {
     padding-bottom: 6px;
+    margin-right: 33px;
     background-color: rgba(104, 183, 56, 0.1);
     border-bottom: 2px solid #ffffff;
+  }
+}
+
+.nav__item--active-form,
+.nav__item--active-catalog {
+  padding-bottom: 5px;
+
+  @media (min-width: @desktop-width) {
+    background: none;
+    border-bottom: 2px solid #68b738;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 6px;
+  }
+}
+
+.nav__item--active-catalog {
+  @media (min-width: @desktop-width) {
+    margin-right: 27px;
   }
 }
 
@@ -129,5 +190,14 @@
     font-size: 20px;
     line-height: 30px;
     color: #ffffff;
+  }
+}
+
+.nav__link--form,
+.nav__link--catalog {
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    color: #111111;
   }
 }
