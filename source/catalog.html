@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="icon" href="favicon.ico 1x, favicon@2x.ico 2x">
+    <link rel="icon" href="Favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="Favicon/180.png 1x, Favicon/180@2x.png 2x">
+    <link rel="manifest" href="manifest.webmanifest">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -13,11 +17,15 @@
 
     <header class="page-header header header--catalog wrapper">
       <a class="header__logo logo" href="index.html">
-        <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="37" alt="Изображение логотипа Кэт энерджи">
-        <img class="logo__title" src="img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-image-tablet.svg">
+          <img class="logo__image" src="img/logo-image-mobile.svg" width="33" height="37" alt="Изображение логотипа Кэт энерджи">
+        </picture>
+        <img class="logo__title logo__title--header" src="img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
       </a>
       <button class="header__toggle header__toggle--close"></button>
-      <nav class="header__nav nav nav--nojs">
+      <nav class="header__nav nav nav--catalog nav--nojs">
         <ul class="nav__list">
           <li class="nav__item nav__item--catalog"><a class="nav__link nav__link--catalog" href="index.html">главная</a></li>
           <li class="nav__item nav__item--catalog nav__item--active nav__item--active-catalog"><a class="nav__link nav__link--catalog" href="#">каталог продукции</a></li>

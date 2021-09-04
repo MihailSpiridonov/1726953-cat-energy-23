@@ -1,12 +1,15 @@
-.logo {
-  display: flex;
+.logo__image {
+  width: 33px;
+  height: 37px;
 
   @media (min-width: @tablet-width) {
-    justify-content: space-between;
+    width: 174px;
+    height: 52px;
   }
 
   @media (min-width: @desktop-width) {
-    justify-content: space-between;
+    width: 202px;
+    height: 59px;
   }
 }
 
@@ -17,6 +20,18 @@
   @media (min-width: @desktop-width) {
     width: 115px;
     margin-left: 12px;
+  }
+}
+
+.logo__title--header {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.logo__title--footer {
+  @media (min-width: @desktop-width) {
+    margin-left: 0;
   }
 }
 
