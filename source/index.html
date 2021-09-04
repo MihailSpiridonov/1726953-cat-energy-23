@@ -51,7 +51,11 @@
             </div>
           </div>
           <div class="basic-information__wrapper wrapper">
-            <img class="basic-information__image" src="img/product-mobile.png" width="280" height="270" alt="Изображение стакана с функциональным питантием Кэт энерджи">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/product-desctop.png 1x, img/product-desctop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/product-tablet.png 1x, img/product-tablet@2x.png 2x">
+              <img class="basic-information__image" src="img/product-mobile.png" srcset="img/product-mobile@2x.png 2x" width="280" height="270" alt="Изображение стакана с функциональным питантием Кэт энерджи">
+            </picture>
             <a class="basic-information__link button" href="form.html">подобрать программу</a>
           </div>
       </section>
@@ -153,7 +157,11 @@
               <div class="wrapper">
                 <div class="slider__wrapper">
                   <h3 class="visually-hidden">Визуальный пример работы нашей программы</h3>
-                  <img class="slider__image slider__image--fat" src="img/slider-fat-cat.png" width="311" height="232" alt="Изображение жирного кота">
+                  <picture>
+                    <source media="(min-width: 1440px)" srcset="img/slider-cat-desktop.png 1x, img/slider-cat-desktop@2x.png 2x">
+                    <source media="(min-width: 768px)" srcset="img/slider-cat-tablet.png 1x, img/slider-cat-tablet@2x.png 2x">
+                    <img class="slider__image slider__image--fat" src="img/slider-fat-cat.png" srcset="img/slider-fat-cat-mobile@2x.png 2x"  width="311" height="232" alt="Изображение жирного кота">
+                  </picture>
                   <img class="slider__image slider__image--thin visually-hidden" src="img/slider-thin-cat.png" width="311" height="232" alt="Изображение худого кота">
                   <label class="slider__result">было<input class="slider__input" type="range">стало</label>
                 </div>

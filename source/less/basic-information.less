@@ -24,9 +24,16 @@
   width: 100vw;
   min-height: 302px;
   margin-bottom: 136px;
-  background-image: url("../img/background-cat.jpg");
+  background-image: url("/img/background-cat-mobile.jpg");
+  background-position: center;
+  background-size: 320px auto;
   background-color: rgba(104, 183, 56, 0.85);
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/background-cat-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   @media (min-width: @tablet-width) {
     align-items: flex-start;
@@ -114,15 +121,19 @@
   height: 270px;
 
   @media (min-width: @tablet-width) {
-    top: 185px;
-    left: 50%;
+    top: 200px;
+    left: 50% - 28px;
     z-index: -1;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: @desktop-width) {
-    top: 185px;
-    left: 50%;
+    top: -85px;
+    left: 50% - 1.5px;
     z-index: 1;
+    width: 552px;
+    height: 499px;
   }
 }
 

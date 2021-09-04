@@ -1,7 +1,7 @@
 /* stylelint-disable */
 
 .slider {
-  @media (min-width: @tablet-width) {
+@media (min-width: @tablet-width) {
     width: 100vw;
     margin: 0;
     padding: 0;
@@ -36,25 +36,27 @@
 }
 
 .slider__image {
-  width: 311px;
+  min-width: 320px;
+  width: 100%;
   height: 232px;
   margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
-    left: 0;
-    top: -250px;
-    width: 100%;
-    height: 590px;
+    left: 50% - 50px;
+    top: -190px;
+    min-width: 708px;
+    height: 620px;
     margin-bottom: 32px;
   }
 
   @media (min-width: @desktop-width) {
-    left: 50% - 20px;
-    top: -150px;
-    width: 50%;
-    height: 462px;
+    left: 50% - 55px;
+    top: -215px;
+    min-width: 690px;
+    width: 90%;
+    height: 660px;
   }
 }
 
