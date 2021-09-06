@@ -7,8 +7,14 @@
   min-height: 289px;
   margin-bottom: 35px;
   background-color: rgba(104, 183, 56, 0.85);
-  background-image: url("../img/present-background.jpg");
+  background-position: center;
+  background-image: url("../img/present-background-mobile.png");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/present-background-mobile@2x.png");
+    background-size: 280px auto;
+  }
 
   @media (min-width: @tablet-width) {
     min-width: 708px;
@@ -16,6 +22,12 @@
     min-height: 200px;
     height: auto;
     margin: 0 30px;
+    background-image: url("../img/present-background-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present-background-tablet@2x.png");
+      background-size: 92vw auto;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -24,14 +36,19 @@
     min-height: 289px;
     margin: 0;
     margin-left: auto;
+    background-image: url("../img/present-background-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/present-background-desktop@2x.png");
+      background-size: 20% auto;
+    }
   }
 }
 
 .present__title {
   position: relative;
   width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   margin-bottom: 42px;
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -45,7 +62,6 @@
     width: 25%;
     margin: auto;
     margin-right: 15.5%;
-    margin-top: 10.5%;
     text-align: left;
   }
 
