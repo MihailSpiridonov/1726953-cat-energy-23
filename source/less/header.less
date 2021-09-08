@@ -11,7 +11,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 92vw;
+    width: 92%;
     padding: 0;
     padding-top: 12px;
     margin-left: auto;
@@ -21,7 +21,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 84.7vw;
+    width: 84.7%;
     align-items: flex-start;
     padding-top: 54.5px;
     margin-bottom: 95px;
@@ -36,13 +36,15 @@
   margin-bottom: 2px;
 
   @media (min-width: @form-tablet-width) {
-    width: 92vw;
+    width: 92%;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 47px;
+    outline: 2px solid #f50606;
+    outline-offset: -2px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 84.7vw;
+    width: 84.7%;
     margin-bottom: 18px;
   }
 }
@@ -71,6 +73,8 @@
     padding-left: 0;
     margin-left: 0;
     margin-right: 87px;
+    outline: 2px solid #d1f506;
+    outline-offset: -2px;
 
     &:hover {
       opacity: 0.8;
@@ -90,6 +94,8 @@
 
 .header__logo--form {
   width: 21.5%;
+  outline: 2px solid #4af506;
+  outline-offset: -2px;
 }
 
 .header__toggle {
@@ -170,6 +176,7 @@
   @media (min-width: @tablet-width) {
     width: 63%;
     padding: 0;
+    padding-left: 0;   ///////////////////
     margin: 0;
     margin-right: auto;
   }
