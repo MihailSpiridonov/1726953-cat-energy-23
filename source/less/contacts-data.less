@@ -6,12 +6,13 @@
   padding: 0;
 
   @media (min-width: @form-tablet-width) {
-    width: 82vw;
+    width: 86vw;
     margin-left: auto;
     margin-right: auto;
   }
 
   @media (min-width: @desktop-width) {
+    width: 82%;
     margin-bottom: 0;
   }
 }
@@ -33,7 +34,7 @@
 
   @media (min-width: @form-tablet-width) {
     min-width: 515px;
-    width: 82%;
+    width: 78%;
     padding-left: 0;
     padding-right: 40px;
     margin-bottom: 73px;
@@ -74,6 +75,14 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 10px;
+
+  @media (min-width: @form-tablet-width) {
+    padding-right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .contacts-data__item::before {
@@ -82,7 +91,7 @@
   left: 88%;
 
   @media (min-width: @form-tablet-width) {
-    left: 95%;
+    left: 90%;
   }
 
   @media (min-width: @desktop-width) {
@@ -91,20 +100,31 @@
 }
 
 .contacts-data__item--email::before {
-  top: 18px;
+  top: 16px;
   width: 20px;
   height: 14px;
   background-image: url("../img/icon_email.svg");
+
+  @media (min-width: @form-tablet-width) {
+    top: 17px;
+  }
 }
 
 .contacts-data__item--phone::before {
-  top: 15px;
+  top: 13px;
+  left: 89%;
   width: 20px;
   height: 22px;
   background-image: url("../img/icon_phone.svg");
 
+  @media (min-width: @form-tablet-width) {
+    top: 14px;
+    left: 90%;
+  }
+
   @media (min-width: @desktop-width) {
     top: 13px;
+    left: 93.5%;
   }
 }
 
