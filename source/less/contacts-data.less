@@ -99,10 +99,6 @@
   }
 }
 
-.contacts-data__item::before.error-input polygon {
-  color: #ff8282;
-}
-
 .contacts-data__item--email::before {
   top: 16px;
   width: 20px;
@@ -112,6 +108,10 @@
   @media (min-width: @form-tablet-width) {
     top: 17px;
   }
+}
+
+.contacts-data__item:focus.contacts-data__item--email::before {
+  background-image: url("../img/icon_email--focus.svg");
 }
 
 .contacts-data__item--phone::before {
@@ -130,6 +130,10 @@
     top: 13px;
     left: 93.5%;
   }
+}
+
+.contacts-data__item:focus.contacts-data__item--phone::before {
+  background-image: url("../img/icon_phone--focus.svg");
 }
 
 .contacts-data__label {
@@ -188,4 +192,14 @@
 .error-input,
 .contacts-data__input:invalid {
   border: 2px solid #ff8282;
+}
+
+// класс для неверно заполненного поля phone
+.contacts-data__item--error.contacts-data__item--phone::before {
+  background-image: url("../img/icon_phone--error.svg");
+}
+
+// класс для неверно заполненного поля email
+.contacts-data__item--error.contacts-data__item--email::before {
+  background-image: url("../img/icon_email--error.svg");
 }
