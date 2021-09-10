@@ -48,6 +48,16 @@
     font-size: 20px;
     line-height: 30px;
 
+    &:focus {
+      outline: 2px solid #222222;
+      outline-offset: -2px;
+    }
+
+    &:active {
+      opacity: 0.3;
+      outline: none;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }

@@ -99,6 +99,10 @@
   }
 }
 
+.contacts-data__item::before.error-input polygon {
+  color: #ff8282;
+}
+
 .contacts-data__item--email::before {
   top: 16px;
   width: 20px;
@@ -160,7 +164,7 @@
   height: 41px;
   padding-left: 13px;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: @form-tablet-width) {
     height: 47px;
@@ -174,7 +178,8 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
+    outline-offset: -2px;
   }
 }
 
