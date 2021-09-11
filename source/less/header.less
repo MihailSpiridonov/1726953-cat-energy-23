@@ -11,7 +11,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    width: 92vw;
+    width: 92%;
     padding: 0;
     padding-top: 12px;
     margin-left: auto;
@@ -36,14 +36,16 @@
   margin-bottom: 2px;
 
   @media (min-width: @form-tablet-width) {
-    width: 92vw;
+    width: 92%;
+    padding-right: 22px;
     margin: 0 auto;
-    margin-bottom: 8px;
+    margin-bottom: 47px;
   }
 
   @media (min-width: @desktop-width) {
     width: 84.7%;
-    margin-bottom: 18px;
+    padding-right: 0;
+    margin-bottom: 58px;
   }
 }
 
@@ -90,6 +92,13 @@
 
 .header__logo--form {
   width: 21.5%;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 175px;
+    width: 25%;
+    padding: 0;
+    padding-left: 5px;
+  }
 }
 
 .header__toggle {

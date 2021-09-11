@@ -2,7 +2,7 @@
 
 .slider {
 @media (min-width: @tablet-width) {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
     background-color: #eaeaea;
@@ -91,7 +91,7 @@
   }
 }
 
-.slider__result::after {
+.slider__before::before{
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
@@ -100,6 +100,7 @@
     min-width: 45px;
     height: 1px;
     border-bottom: 1px dashed rgba(0, 0, 0, 0.24);
+    cursor: pointer;
   }
 
   @media (min-width: @desktop-width) {
@@ -107,15 +108,15 @@
   }
 }
 
-.slider__result:hover.slider__result::after {
+.slider__before:hover.slider__before::before {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.slider__result:active.slider__result::after {
+.slider__before:active.slider__before::before {
   border-bottom: none;
 }
 
-.slider__result::before {
+.slider__after::before {
   @media (min-width: @tablet-width) {
     position: absolute;
     content: "";
@@ -131,14 +132,13 @@
   }
 }
 
-.slider__result:hover.slider__result::before {
+.slider__after:hover.slider__after::before {
   border-bottom: 1px solid rgba(0, 0, 0, 0.4);
 }
 
-.slider__result:active.slider__result::before {
+.slider__after:active.slider__after::before {
   border-bottom: none;
 }
-
 
 .slider__result .slider__input {
   position: relative;
@@ -210,10 +210,21 @@ input[type=range]::-webkit-slider-thumb {
     background-color: #68b738;
     border-radius: 50%;
     box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
+    filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.16));
   }
+}
 
-  :active {
+.slider__result:hover input[type=range]::-webkit-slider-thumb {
+  @media (min-width: @tablet-width) {
+    box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  }
+}
+
+.slider__result:active input[type=range]::-webkit-slider-thumb {
+  @media (min-width: @tablet-width) {
     box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #68b738;
+    filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
   }
 }
 
@@ -232,8 +243,10 @@ input[type=range]::-moz-range-thumb {
     border-radius: 50%;
     box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #cdcdcd;
   }
+}
 
-  :active {
+.slider__result:hover input[type=range]::-moz-range-thumb {
+  @media (min-width: @tablet-width) {
     box-shadow: 0 0 0 12px #ffffff,  0 0 0 13px #68b738;
   }
 }

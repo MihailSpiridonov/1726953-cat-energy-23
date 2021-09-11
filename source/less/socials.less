@@ -57,28 +57,14 @@
   }
 }
 
-.socials__item:hover path {
+.socials__item:hover svg {
   @media (min-width: @tablet-width) {
-    &:hover {
-      fill: #68b738;
-      background-color: #f2f2f2;
-    }
+    stroke: #68b738;
+    fill: none;
 
     &:active {
       opacity: 0.3;
     }
-  }
-}
-
-.socials__item:hover .socials__logo--fb path {
-  @media (min-width: @tablet-width) {
-    stroke: #68b738;
-  }
-}
-
-.socials__item:active .socials__logo--fb path {
-  @media (min-width: @tablet-width) {
-    opacity: 0.3;
   }
 }
 
@@ -105,6 +91,7 @@
 .socials__logo--fb {
   width: 22px;
   height: 22px;
+  stroke: #666666;
 
   @media (min-width: @tablet-width) {
     width: 28px;

@@ -26,6 +26,7 @@
 .nav--catalog {
   @media (min-width: @tablet-width) {
     transform: translateY(-3px);
+    padding-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,7 +50,6 @@
     justify-content: flex-start;
     width: 100%;
     padding-top: 10px;
-    margin-right: auto;
     border: none;
   }
 
@@ -60,15 +60,14 @@
 }
 
 .nav__list--form {
-  margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
 .nav__item {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   min-height: 66px;
   background-color: #ffffff;
   border-bottom: 1px solid #e6e6e6;

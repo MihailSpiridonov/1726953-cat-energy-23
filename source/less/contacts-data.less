@@ -6,7 +6,7 @@
   padding: 0;
 
   @media (min-width: @form-tablet-width) {
-    width: 82vw;
+    width: 86vw;
     margin-left: auto;
     margin-right: auto;
   }
@@ -34,7 +34,7 @@
 
   @media (min-width: @form-tablet-width) {
     min-width: 515px;
-    width: 82%;
+    width: 78%;
     padding-left: 0;
     padding-right: 40px;
     margin-bottom: 73px;
@@ -75,6 +75,14 @@
   display: grid;
   grid-template-columns: min-content 1fr;
   gap: 10px;
+
+  @media (min-width: @form-tablet-width) {
+    padding-right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .contacts-data__item::before {
@@ -83,7 +91,7 @@
   left: 88%;
 
   @media (min-width: @form-tablet-width) {
-    left: 95%;
+    left: 90%;
   }
 
   @media (min-width: @desktop-width) {
@@ -96,6 +104,14 @@
   width: 20px;
   height: 14px;
   background-image: url("../img/icon_email.svg");
+
+  @media (min-width: @form-tablet-width) {
+    top: 17px;
+  }
+}
+
+.contacts-data__item:focus.contacts-data__item--email::before {
+  background-image: url("../img/icon_email--focus.svg");
 }
 
 .contacts-data__item--phone::before {
@@ -105,9 +121,19 @@
   height: 22px;
   background-image: url("../img/icon_phone.svg");
 
+  @media (min-width: @form-tablet-width) {
+    top: 14px;
+    left: 90%;
+  }
+
   @media (min-width: @desktop-width) {
     top: 13px;
+    left: 93.5%;
   }
+}
+
+.contacts-data__item:focus.contacts-data__item--phone::before {
+  background-image: url("../img/icon_phone--focus.svg");
 }
 
 .contacts-data__label {
@@ -142,7 +168,7 @@
   height: 41px;
   padding-left: 13px;
   text-transform: uppercase;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
 
   @media (min-width: @form-tablet-width) {
     height: 47px;
@@ -156,7 +182,8 @@
   }
 
   &:focus {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
+    outline-offset: -2px;
   }
 }
 
@@ -165,4 +192,14 @@
 .error-input,
 .contacts-data__input:invalid {
   border: 2px solid #ff8282;
+}
+
+// класс для неверно заполненного поля phone
+.contacts-data__item--error.contacts-data__item--phone::before {
+  background-image: url("../img/icon_phone--error.svg");
+}
+
+// класс для неверно заполненного поля email
+.contacts-data__item--error.contacts-data__item--email::before {
+  background-image: url("../img/icon_email--error.svg");
 }

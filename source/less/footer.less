@@ -12,7 +12,7 @@
   padding-bottom: 0;
 
   @media (min-width: @form-tablet-width) {
-    width: 100vw;
+    width: 100%;
     min-height: 150px;
   }
 }
@@ -36,7 +36,7 @@
 }
 
 .footer__wrapper--form {
-  width: 89vw;
+  width: 89%;
   transform: translateX(-3px);
 
   @media (min-width: @form-tablet-width) {
@@ -45,7 +45,7 @@
 
   @media (min-width: @desktop-width) {
     min-width: 1220px;
-    width: 84.7vw;
+    width: 84.7%;
   }
 }
 
@@ -75,6 +75,7 @@
   @media (min-width: @desktop-width) {
     padding-top: 40px;
     margin-right: 88px;
+    margin-left: 0;
   }
 }
 
@@ -170,6 +171,6 @@
   }
 }
 
-.footer__link:hover path {
-  fill: #68b738;
+.footer__link:hover svg {
+  stroke: #68b738;
 }
