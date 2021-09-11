@@ -44,28 +44,20 @@ const html = () => {
 const scripts = () => {
   return gulp.src ("source/js/*.js")
     .pipe(terser())
-    //.pipe(rename(".min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
 
 exports.scripts = scripts;
-/* const scripts = () => {
-  return gulp.src("source/js/script.js")
-    .pipe(terser())
-    .pipe(rename("script.min.js"))
-    .pipe(gulp.dest("build/js"))
-    .pipe(sync.stream());
-}
-
-exports.scripts = scripts; */
 
 // Images
-//const images = () => {
-//  return gulp.src("sourse/img/**/*.img")
-//  .pipe()
-//  .pipe();
-//}
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+  .pipe(squoosh())
+  .pipe(gulp.dest("build/img"));
+}
+
+exports.images = images;
 
 // Server
 
