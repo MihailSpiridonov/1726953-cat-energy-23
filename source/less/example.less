@@ -31,7 +31,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 100%;
+    width: 50%;
     margin-left: 7.5%;
     margin-bottom: 76px;
   }
@@ -57,7 +57,7 @@
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 44% 54.5%;
-    gap: 20px;
+    gap: 0;
     width: 100%;
     min-height: 445px;
     padding-top: 20px;
@@ -67,8 +67,6 @@
 
 .example__wrapper-section {
   @media (min-width: @desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding-top: 17px;
     background-color: #f2f2f2;
   }
@@ -82,8 +80,11 @@
   }
 
   @media (min-width: @desktop-width) {
+    min-width: 550px;
+    width: 45%;
     height: 100%;
-    margin-bottom: 0;
+    margin: 0;
+    margin-left: 60px;
   }
 }
 

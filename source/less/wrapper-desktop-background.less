@@ -2,14 +2,14 @@
   display: none;
 
   @media (min-width: @desktop-width) {
-    display: inline;
+    display: inline-block;
     position: absolute;
     content: "";
     top: -225px;
-    right: 0;
+    left: 50%;
     z-index: -1;
-    min-width: 720px;
-    width: 10%;
+    min-width: 50%;
+    width: 50vw;
     min-height: 694px;
     height: 10%;
     padding: 0;
@@ -17,8 +17,8 @@
     background-image: url("../img/index/background-cat-desktop.jpg");
     background-color: rgba(104, 183, 56, 0.85);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 100% 0;
+    background-size: contain;
+    background-position: right;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/background-cat-desktop@2x.jpg");

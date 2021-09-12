@@ -16,23 +16,25 @@
   position: absolute;
   content: "";
   top: 15px;
-  left: 30%;
+  left: 85%;
   z-index: -1;
-  width: 100%;
+  min-width: 45px;
+  max-width: 90vw;
   height: 2px;
   background-color: #68b738;
 
   @media (min-width: @form-tablet-width) {
     top: 54px;
-    left: 50%;
-    width: 100%;
+    left: 56%;
+    min-width: 335px;
+    max-width: 100%;
   }
 
   @media (min-width: @desktop-width) {
     top: 57px;
-    left: 23%;
-    min-width: 780px;
-    width: 100%;
+    left: 30%;
+    min-width: 960px;
+    max-width: 100%;
   }
 }
 
@@ -41,16 +43,18 @@
     position: absolute;
     content: "";
     top: 54px;
-    right: 96%;
+    right: 96.5%;
     z-index: -1;
-    width: 550px;
+    min-width: 30px;
+    max-width: 100%;
     height: 2px;
     background-color: #68b738;
   }
 
   @media (min-width: @desktop-width) {
     top: 57px;
-    left: -48%;
+    right: 103%;
+    min-width: 70px;
   }
 }
 
