@@ -22,10 +22,22 @@
   }
 }
 
-.nav--form,
+.nav--form {
+  @media (min-width: @tablet-width) {
+    transform: translateY(-3px);
+    width: 70%;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    transform: none;
+  }
+}
+
 .nav--catalog {
   @media (min-width: @tablet-width) {
     transform: translateY(-3px);
+    width: 63%;
     padding-left: 0;
   }
 

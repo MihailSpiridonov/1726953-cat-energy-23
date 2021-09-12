@@ -1,5 +1,5 @@
 .form {
-  width: 100%;
+  width: 99.8%;
   margin-bottom: 35px;
   padding-bottom: 0;
 
@@ -12,11 +12,11 @@
   }
 }
 
-.form__wpapper {
+.form__wrapper {
   width: 87.5%;
   padding-left: 0;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-width: @form-tablet-width) {
     width: 82%;
@@ -26,6 +26,7 @@
 
   @media (min-width: @desktop-width) {
     width: 84.7%;
+    padding-left: 5px;
   }
 }
 
@@ -39,9 +40,13 @@
   color: #000000;
 
   @media (min-width: @form-tablet-width) {
-    margin-bottom: 55px;
+    margin-bottom: 52px;
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 54px;
   }
 }
 
@@ -76,6 +81,10 @@
     flex-direction: row;
     width: 82%;
     padding-left: 1px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 58px;
   }
 }
 

@@ -1,4 +1,9 @@
 .wrapper-center {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100%;
+
   @media (min-width: @desktop-width) {
     max-width: 1440px;
     width: 100vw;

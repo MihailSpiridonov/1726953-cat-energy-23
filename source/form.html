@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page form-page" lang="ru">
+<html class="page page--form" lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,12 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
-  <body class="page-body form-page-body">
+  <body class="page__body page__body--form">
 
 <!-- header start -->
 
     <div class="wrapper-center">
-      <header class="page-header header header--form wrapper">
+      <header class="page__header header header--form wrapper">
         <a class="header__logo header__logo--form logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
@@ -39,9 +39,9 @@
   <!-- main start -->
   <!-- assortiment start -->
 
-      <main class="form-page-main">
+      <main class="page__main page__main--form">
         <form class="form" method="GET" action="https://echo.htmlacademy.ru">
-          <div class="form__wpapper form-wrapper">
+          <div class="form__wrapper">
             <h1 class="form__title">Подбор программы</h1>
             <h2 class="visually-hidden">Анкета для подбора программы питания вашему коту</h2>
             <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -49,7 +49,7 @@
           <div class="wrapper-basic-data-and-programs wrapper">
             <fieldset class="outer-wrap outer-wrap--basic-data">
               <legend class="visually-hidden">Основные данные</legend>
-              <div class="basic-data form-wrapper">
+              <div class="basic-data wrapper wrapper--form">
                 <h2 class="visually-hidden">Основные данные в анкете</h2>
                 <div class="basic-data__wrapper">
                   <label class="basic-data__label basic-data__name" for="input-basic-data-name">ИМЯ:*</label>
@@ -67,7 +67,7 @@
             </fieldset>
             <fieldset class="outer-wrap outer-wrap--form-programs" tabindex="0">
               <legend class="visually-hidden">Выбор программы</legend>
-              <div class="form-programs form-wrapper">
+              <div class="form-programs wrapper wrapper--form">
                 <h2 class="visually-hidden">Варианты программ</h2>
                 <input class="form-programs__radio-input" type="radio" name="progpam-options" value="slimming" id="program-slim" checked>
                 <label class="form-programs__radio-text" for="program-slim" tabindex="0">похудение</label>
@@ -80,7 +80,7 @@
           </div>
           <fieldset class="outer-wrap outer-wrap--contacts-data">
             <legend class="visually-hidden">Контактные данные</legend>
-            <div class="contacts-data form-wrapper">
+            <div class="contacts-data wrapper wrapper--form">
               <h2 class="contacts-data__subtitle">Контактные данные (владельца кота)</h2>
               <ul class="contacts-data__list">
                 <li class="contacts-data__item contacts-data__item--email" tabindex="0">
@@ -96,14 +96,14 @@
           </fieldset>
           <fieldset class="outer-wrap outer-wrap--comment">
             <legend class="visually-hidden">Ваши комментарии</legend>
-            <div class="comment form-wrapper">
+            <div class="comment wrapper wrapper--form">
               <h2 class="comment__subtitle">Комментарий</h2>
               <textarea class="comment__text" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="outer-wrap outer-wrap--additionally-form">
             <legend class="visually-hidden">Заказ дополнительных товаров</legend>
-            <div class="additionally-form form-wrapper">
+            <div class="additionally-form wrapper wrapper--form">
               <h2 class="additionally-form__subtitle">Дополнительно</h2>
               <ul class="additionally-form__list">
                 <li class="additionally-form__item">
@@ -125,7 +125,7 @@
               </ul>
             </div>
           </fieldset>
-          <div class="form__wrapper form__wrapper--button form-wrapper">
+          <div class="form__wrapper form__wrapper--button wrapper wrapper--form">
             <button class="form__button button" type="submit" formaction="https://echo.htmlacademy.ru/">отправить заявку</button>
             <p class="form__text">* — Обязательные поля</p>
           </div>
@@ -136,9 +136,9 @@
   <!-- main end -->
   <!-- footer start -->
 
-      <footer class="page-footer page-footer--form">
+      <footer class="page__footer page__footer--form">
         <div class="contacts-wrapper contacts-wrapper--form">
-          <section class="page-footer__contacts contacts contacts--form form-wrapper">
+          <section class="page__contacts contacts contacts--form form-wrapper">
             <h2 class="visually-hidden">Контакты</h2>
             <h3 class="contacts__title contacts__title--form">приглашаем <br>к сотрудничеству дилеров!</h3>
             <div class="contacts__address-wrapper contacts__address-wrapper--form">
