@@ -15,8 +15,8 @@
 
 <!-- header start -->
 
-    <div class="wrapper-center">
-      <header class="page__header header header--catalog wrapper">
+    <header class="wrapper-center">
+      <div class="page__header header header--catalog wrapper">
         <a class="header__logo logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
@@ -32,18 +32,21 @@
             <li class="nav__item nav__item--catalog nav__item--active nav__item--active-catalog"><a class="nav__link nav__link--catalog" href="#">каталог продукции</a></li>
             <li class="nav__item nav__item--catalog"><a class="nav__link nav__link--catalog" href="form.html">подбор программы</a></li>
           </ul>
-        </nav>
-      </header>
+        </nav></div>
+    </header>
 
   <!-- header end -->
   <!-- main start -->
   <!-- assortiment start -->
 
-      <main class="page__main page__main--catalog catalog">
+    <main class="page__main page__main--catalog catalog">
+      <div class="wrapper-center">
         <div class="catalog__wrapper">
           <h1 class="catalog__title wrapper">Каталог продукции</h1>
         </div>
-        <section class="assortiment">
+      </div>
+      <section class="wrapper-center">
+        <div class="assortiment">
           <h2 class="visually-hidden">Наши товары</h2>
           <ul class="assortiment__list">
             <li class="assortiment__item card card--chicken-500" id="pro-link">
@@ -269,13 +272,15 @@
               </div>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
   <!-- assortiment end -->
   <!-- additional start -->
   <!-- present start -->
 
-        <section class="additional">
+      <section class="wrapper-center">
+        <div class="additional">
           <div class="additional__title-wrapper wrapper">
             <h2 class="additional__title">Дополнительные товары</h2>
           </div>
@@ -329,39 +334,41 @@
               <h3 class="present__title">Закажите все <br>и получите чехол для кота в подарок!</h3>
             </section>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
   <!-- additional end -->
   <!-- present end -->
   <!-- main end -->
   <!-- footer start -->
 
-      <footer class="page__footer page__footer--form">
-        <div class="contacts-wrapper contacts-wrapper--catalog">
-          <section class="page__contacts contacts contacts--form wrapper wrapper--form">
-            <h2 class="visually-hidden">Контакты</h2>
-            <h3 class="contacts__title contacts__title--form">приглашаем <br>к сотрудничеству дилеров!</h3>
-            <div class="contacts__address-wrapper contacts__address-wrapper--form">
-              <p class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8</p>
-              <p class="contacts__address contacts__address--city">Санкт-Петербург</p>
-            </div>
-          </section>
-        </div>
-        <div class="map-wrapper map-wrapper--catalog">
-          <iframe class="map-wrapper__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1630696865224!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
-          <picture>
-            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-marker-desktop.webp 1x, img/map-marker-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/map-marker-tablet.webp 1x, img/map-marker-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/map-marker-mobile.webp 1x, img/map-marker-mobile@2x.webp 2x">
+    <footer class="page__footer page__footer--form">
+      <div class="contacts-wrapper contacts-wrapper--catalog">
+        <section class="page__contacts contacts contacts--form wrapper wrapper--form">
+          <h2 class="visually-hidden">Контакты</h2>
+          <h3 class="contacts__title contacts__title--form">приглашаем <br>к сотрудничеству дилеров!</h3>
+          <div class="contacts__address-wrapper contacts__address-wrapper--form">
+            <p class="contacts__address contacts__address--street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address contacts__address--city">Санкт-Петербург</p>
+          </div>
+        </section>
+      </div>
+      <div class="map-wrapper map-wrapper--catalog">
+        <iframe class="map-wrapper__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631f6df7d3481%3A0xc0016be317f9a6fd!2sCat%20Energy!5e0!3m2!1sru!2sru!4v1630696865224!5m2!1sru!2sru" width="320" height="362" style="border: 0;" allowfullscreen="" loading="lazy"></iframe>
+        <picture>
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-marker-desktop.webp 1x, img/map-marker-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-marker-tablet.webp 1x, img/map-marker-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-marker-mobile.webp 1x, img/map-marker-mobile@2x.webp 2x">
 
-            <source media="(min-width: 1440px)" srcset="img/map-marker-desktop.png 1x, img/map-marker-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/map-marker-tablet.png 1x, img/map-marker-tablet@2x.png 2x">
-            <img class="map-wrapper__fixed" width="320" height="362" src="img/map-marker-mobile.png" srcset="img/map-marker-mobile@2x.png 2x" alt="Интернет-магазин 'Кэт энерджи' находится по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-          </picture>
-        </div>
-        <section class="footer footer--form">
-          <div class="footer__wrapper footer__wrapper--form wrapper">
+          <source media="(min-width: 1440px)" srcset="img/map-marker-desktop.png 1x, img/map-marker-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-marker-tablet.png 1x, img/map-marker-tablet@2x.png 2x">
+          <img class="map-wrapper__fixed" width="320" height="362" src="img/map-marker-mobile.png" srcset="img/map-marker-mobile@2x.png 2x" alt="Интернет-магазин 'Кэт энерджи' находится по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+      </div>
+      <section class="footer footer--form">
+        <div class="footer__wrapper footer__wrapper--form wrapper-center">
+          <div class="footer__wrap wrapper">
             <h3 class="visually-hidden">Социальные сети</h3>
             <img class="footer__logo footer__logo--form logo-title" src="img/logo-title.svg" width="128" height="24" alt="Логотип Кэт энерджи">
             <ul class="footer__socials socials socials--form">
@@ -394,9 +401,9 @@
               </svg>
             </a>
           </div>
-        </section>
-      </footer>
-    </div>
+        </div>
+      </section>
+    </footer>
     <script src="js/nav.js"></script>
   </body>
 </html>
