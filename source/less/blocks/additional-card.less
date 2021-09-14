@@ -16,7 +16,13 @@
       "link link";
     row-gap: 12px;
     padding-top: 24px;
-    border: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-bottom: 1px solid #cdcdcd;
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
   }
 
   @media (min-width: @desktop-width) {
