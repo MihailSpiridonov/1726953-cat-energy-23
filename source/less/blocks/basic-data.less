@@ -93,7 +93,7 @@
   }
 }
 
-.basic-data__label + input {
+.basic-data__label + .basic-data__input {
   height: 39px;
   padding-left: 15px;
   text-transform: uppercase;
@@ -124,34 +124,41 @@
 
 // класс для некорректного значения
 
-.error-input,
-.basic-data__label + input:invalid {
+.basic-data__input--error,
+.basic-data__label + .basic-data__input:invalid {
   border: 2px solid #ff8282;
 }
 
 // убираем дефолтные стрелки на input(type="number")
 // Chrome:
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+//input[type="number"]::-webkit-outer-spin-button,
+//input[type="number"]::-webkit-inner-spin-button {
+.basic-data__input[type="number"]::-webkit-outer-spin-button,
+.basic-data__input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 // Firefox:
 
-input[type="number"] {
+//input[type="number"] {
+.basic-data__nput[type="number"] {
   -moz-appearance: textfield;
 }
 
-input[type="number"]:hover,
-input[type="number"]:focus {
+//input[type="number"]:hover,
+//input[type="number"]:focus {
+.basic-data__input[type="number"]:hover,
+.basic-data__input[type="number"]:focus {
   -moz-appearance: number-input;
 }
 // другиe
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+//input[type=number]::-webkit-inner-spin-button,
+//input[type=number]::-webkit-outer-spin-button {
+.basic-data__input[type=number]::-webkit-inner-spin-button,
+.basic-data__input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }

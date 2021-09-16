@@ -4,14 +4,14 @@ const sourcemap = require("gulp-sourcemaps");
 const less = require("gulp-less");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
-const htmlmin = require('gulp-htmlmin');
-const csso = require('postcss-csso');
-const rename = require('gulp-rename');
-const del = require('del');
-const squoosh = require('gulp-libsquoosh');
-const svgstore = require('gulp-svgstore');
-const terser = require('gulp-terser');
-const webp = require('gulp-webp');
+const htmlmin = require("gulp-htmlmin");
+const csso = require("postcss-csso");
+const rename = require("gulp-rename");
+const del = require("del");
+const squoosh = require("gulp-libsquoosh");
+const svgstore = require("gulp-svgstore");
+const terser = require("gulp-terser");
+const webp = require("gulp-webp");
 const sync = require("browser-sync").create();
 
 // Styles
@@ -113,7 +113,7 @@ const clean = () => {
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: 'build'
+      baseDir: "build"
     },
     cors: true,
     notify: false,

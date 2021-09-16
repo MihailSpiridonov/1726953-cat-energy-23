@@ -8,7 +8,6 @@
     <link rel="icon" href="img/Favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/Favicon/180.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page__body page__body--form">
@@ -25,8 +24,8 @@
           </picture>
           <img class="logo__title logo__title--header" src="img/logo-title.svg" width="101" height="18" alt="Логотип Кэт энерджи">
         </a>
-        <button class="header__toggle header__toggle--form header__toggle--form-open"></button>
-        <nav class="header__nav nav nav--form nav--close-mobile nav--nojs">
+        <button class="header__toggle header__toggle--form header__toggle--form-close"></button>
+        <nav class="header__nav nav nav--form nav--nojs">
           <ul class="nav__list">
             <li class="nav__item nav__item--form"><a class="nav__link nav__link--form" href="index.html">главная</a></li>
             <li class="nav__item nav__item--form"><a class="nav__link nav__link--form" href="catalog.html">каталог продукции</a></li>
@@ -55,11 +54,11 @@
                 <h2 class="visually-hidden">Основные данные в анкете</h2>
                 <div class="basic-data__wrapper">
                   <label class="basic-data__label basic-data__name" for="input-basic-data-name">ИМЯ:*</label>
-                  <input id="input-basic-data-name" type="text" placeholder="барсик">
+                  <input class="basic-data__input basic-data__input--name" id="input-basic-data-name" type="text" placeholder="барсик" required>
                 </div>
                 <div class="basic-data__wrapper">
                   <label class="basic-data__label basic-data__weight" for="input-basic-data-weight">Вес (кг):*</label>
-                  <input class="basic-data__input basic-data__input--number" id="input-basic-data-weight" type="number" step="1" min="1" max="100" placeholder="7">
+                  <input class="basic-data__input basic-data__input--number" id="input-basic-data-weight" type="number" step="1" min="1" max="100" placeholder="7" required>
                 </div>
                 <div class="basic-data__wrapper basic-data__wrapper--last">
                   <label class="basic-data__label basic-data__age" for="input-basic-data-age">Возраст (лет):</label>
@@ -87,20 +86,21 @@
               <ul class="contacts-data__list">
                 <li class="contacts-data__item contacts-data__item--email" tabindex="0">
                   <label class="contacts-data__label contacts-data__email" for="input-contacts-data-email">E-mail:*</label>
-                  <input class="contacts-data__input contacts-data__input--email" id="input-contacts-data-email" type="email" placeholder="kuklachev@gmail.com">
+                  <input class="contacts-data__input contacts-data__input--email" id="input-contacts-data-email" type="email" placeholder="kuklachev@gmail.com" required>
                 </li>
                 <li class="contacts-data__item contacts-data__item--phone" tabindex="0">
                   <label class="contacts-data__label contacts-data__phone" for="input-contacts-data-phone">Телефон:*</label>
-                  <input class="contacts-data__input contacts-data__input--phone" id="input-contacts-data-phone" type="tel" placeholder="8 (960) 900-60-90">
+                  <input class="contacts-data__input contacts-data__input--phone" id="input-contacts-data-phone" type="tel" placeholder="8 (960) 900-60-90" required>
                 </li>
               </ul>
             </div>
           </fieldset>
           <fieldset class="outer-wrap outer-wrap--comment">
             <legend class="visually-hidden">Ваши комментарии</legend>
+            <h2 class="visually-hidden">Комментарий</h2>
             <div class="comment wrapper wrapper--form">
-              <h2 class="comment__subtitle">Комментарий</h2>
-              <textarea class="comment__text" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="comment__subtitle" for="comment-text">Комментарий</label>
+              <textarea class="comment__text" id="comment-text" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="outer-wrap outer-wrap--additionally-form">
