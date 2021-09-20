@@ -1,0 +1,36 @@
+.wrapper {
+  min-width: 280px;
+  width: 87.5vw;
+  margin: 0 auto;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    min-width: 708px;
+    width: 92vw;
+    margin: 0 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1220px;
+    width: 84.7%;
+    margin: 0 auto;
+  }
+}
+
+.wrapper--form {
+  @media (min-width: @form-tablet-width) {
+    min-width: 630px;
+    width: 82vw;
+    margin: 0 70px;
+  }
+
+  @media (min-width: @desktop-width) {
+    min-width: 1220px;
+    width: 84.7%;
+    margin: 0 auto;
+  }
+}
+
+.wrapper__background {
+  background-color: #f2f2f2;
+}

@@ -1,0 +1,35 @@
+.container-desktop {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    top: -225px;
+    left: 50%;
+    z-index: -1;
+    min-width: 50%;
+    width: 50vw;
+    min-height: 694px;
+    height: 10%;
+    padding: 0;
+    margin: 0;
+    background-image: url("../img/index/background-cat-desktop.jpg");
+    background-color: rgb(80, 77, 83);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index/background-cat-desktop@2x.jpg");
+    }
+  }
+}
+
+.container-desktop__image {
+  @media (min-width: @desktop-width) {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(104, 183, 56, 0.85);
+  }
+}

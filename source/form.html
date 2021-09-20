@@ -18,8 +18,8 @@
 
 <!-- header start -->
 
-    <header class="wrapper-center">
-      <div class="page__header header header--form wrapper">
+    <header class="container">
+      <div class="page__header header header--form container__wrapper wrapper">
         <a class="header__logo header__logo--form logo" href="index.html">
           <picture>
             <source media="(min-width: 1440px)" srcset="img/logo-image-desktop.svg">
@@ -43,7 +43,7 @@
   <!-- main start -->
   <!-- assortiment start -->
 
-    <main class="wrapper-center">
+    <main class="container">
       <div class="page__main page__main--form">
         <form class="form" method="GET" action="https://echo.htmlacademy.ru">
           <div class="form__wrapper">
@@ -51,10 +51,10 @@
             <h2 class="visually-hidden">Анкета для подбора программы питания вашему коту</h2>
             <p class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           </div>
-          <div class="wrapper-basic-data-and-programs wrapper">
+          <div class="container__basic-data-and-programs"> <!--container__wrapper wrapper-->
             <fieldset class="outer-wrap outer-wrap--basic-data">
               <legend class="visually-hidden">Основные данные</legend>
-              <div class="basic-data wrapper wrapper--form">
+              <div class="basic-data container__wrapper wrapper wrapper--form">
                 <h2 class="visually-hidden">Основные данные в анкете</h2>
                 <div class="basic-data__wrapper">
                   <label class="basic-data__label basic-data__name" for="input-basic-data-name">ИМЯ:*</label>
@@ -72,7 +72,7 @@
             </fieldset>
             <fieldset class="outer-wrap outer-wrap--form-programs" tabindex="0">
               <legend class="visually-hidden">Выбор программы</legend>
-              <div class="form-programs wrapper wrapper--form">
+              <div class="form-programs wrapper container__wrapper wrapper wrapper--form">
                 <h2 class="visually-hidden">Варианты программ</h2>
                 <input class="form-programs__radio-input" type="radio" name="progpam-options" value="slimming" id="program-slim" checked>
                 <label class="form-programs__radio-text" for="program-slim" tabindex="0">похудение</label>
@@ -85,7 +85,7 @@
           </div>
           <fieldset class="outer-wrap outer-wrap--contacts-data">
             <legend class="visually-hidden">Контактные данные</legend>
-            <div class="contacts-data wrapper wrapper--form">
+            <div class="contacts-data container__wrapper wrapper wrapper--form">
               <h2 class="contacts-data__subtitle">Контактные данные (владельца кота)</h2>
               <ul class="contacts-data__list">
                 <li class="contacts-data__item contacts-data__item--email" tabindex="0">
@@ -102,14 +102,14 @@
           <fieldset class="outer-wrap outer-wrap--comment">
             <legend class="visually-hidden">Ваши комментарии</legend>
             <h2 class="visually-hidden">Комментарий</h2>
-            <div class="comment wrapper wrapper--form">
+            <div class="comment container__wrapper wrapper wrapper--form">
               <label class="comment__subtitle" for="comment-text">Комментарий</label>
               <textarea class="comment__text" id="comment-text" name="comment" cols="20" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="outer-wrap outer-wrap--additionally-form">
             <legend class="visually-hidden">Заказ дополнительных товаров</legend>
-            <div class="additionally-form wrapper wrapper--form">
+            <div class="additionally-form container__wrapper wrapper wrapper--form">
               <h2 class="additionally-form__subtitle">Дополнительно</h2>
               <ul class="additionally-form__list">
                 <li class="additionally-form__item">
@@ -131,7 +131,7 @@
               </ul>
             </div>
           </fieldset>
-          <div class="form__wrapper form__wrapper--button wrapper wrapper--form">
+          <div class="form__wrapper form__wrapper--button container__wrapper wrapper wrapper--form">
             <button class="form__button button" type="submit" formaction="https://echo.htmlacademy.ru/">отправить заявку</button>
             <p class="form__text">* — Обязательные поля</p>
           </div>
@@ -144,8 +144,8 @@
   <!-- footer start -->
 
     <footer class="page__footer page__footer--form">
-      <div class="contacts-wrapper contacts-wrapper--form wrapper-center">
-        <section class="page__contacts contacts contacts--form form-wrapper">
+      <div class="contacts-wrapper contacts-wrapper--form container">
+        <section class="page__contacts contacts contacts--form container__wrapper wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <h3 class="contacts__title contacts__title--form">приглашаем <br>к сотрудничеству дилеров!</h3>
           <div class="contacts__address-wrapper contacts__address-wrapper--form">
@@ -167,8 +167,8 @@
         </picture>
       </div>
       <section class="footer footer--form">
-        <div class="footer__wrapper footer__wrapper--form wrapper-center">
-          <div class="footer__wrap wrapper">
+        <div class="footer__wrapper footer__wrapper--form container">
+          <div class="footer__wrap container__wrapper wrapper">
             <h3 class="visually-hidden">Социальные сети</h3>
             <img class="footer__logo footer__logo--form logo-title" src="img/logo-title.svg" width="128" height="24" alt="Логотип Кэт энерджи">
             <ul class="footer__socials socials socials--form">

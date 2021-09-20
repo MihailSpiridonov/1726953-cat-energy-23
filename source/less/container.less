@@ -1,0 +1,49 @@
+.container {
+  @media (min-width: @tablet-width) {
+    min-width: 768px;
+    width: 92vw;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 1440px;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.container__additional-and-present {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.container__basic-data-and-programs {
+  min-width: 280px;
+  width: 87.5vw;
+  padding: 0;
+  padding-bottom: 0;
+  margin: 0 auto;
+  margin-bottom: 21px;
+
+  @media (min-width: @form-tablet-width) {
+    min-width: 708px;
+    width: 92vw;
+    margin: 0 30px;
+    margin-bottom: 67px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    min-width: 1220px;
+    width: 84.7%;
+    padding-left: 55px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+}
