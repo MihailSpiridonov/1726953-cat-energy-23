@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts.oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts.oswaldmedium.woff" as="font" type="font/woff" crossorigin>
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="img/Favicon/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/Favicon/180.png">
@@ -99,8 +102,8 @@
   <!-- programs end -->
   <!-- principle start -->
 
-      <div class="wrapper-center">
-        <section class="principle">
+      <section class="principle">
+        <div class="wrapper-center">
           <div class="principle__wrapper wrapper">
             <h2 class="principle__title">Как это работает</h2>
             <ul class="principle__list">
@@ -118,8 +121,8 @@
               </li>
             </ul>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
   <!-- principle end -->
   <!-- example start -->
@@ -163,7 +166,7 @@
 
                     <source media="(min-width: 1440px)" srcset="img/index/slider-cat-desktop.png 1x, img/index/slider-cat-desktop@2x.png 2x">
                     <source media="(min-width: 768px)" srcset="img/index/slider-cat-tablet.png 1x, img/index/slider-cat-tablet@2x.png 2x">
-                    <img class="slider__image slider__image--fat" src="img/index/slider-fat-cat.png" srcset="img/index/slider-fat-cat-mobile@2x.png 2x"  width="311" height="232" alt="Изображение жирного кота">
+                    <img class="slider__image slider__image--fat" src="img/index/slider-fat-cat-mobile.png" srcset="img/index/slider-fat-cat-mobile@2x.png 2x"  width="311" height="232" alt="Изображение жирного кота">
                   </picture>
                   <img class="slider__image slider__image--thin visually-hidden" src="img/index/slider-thin-cat.png" width="311" height="232" alt="Изображение худого кота">
                   <label class="slider__result"><span class="slider__before">было</span><input class="slider__input" type="range"><span class="slider__after">стало</span></label>
@@ -181,7 +184,7 @@
   <!-- footer start -->
 
     <footer class="page__footer">
-      <div class="contacts-wrapper">
+      <div class="contacts-wrapper wrapper-center">
         <section class="page__contacts contacts wrapper">
           <h2 class="visually-hidden">Контакты</h2>
           <h3 class="contacts__title">приглашаем <br>к сотрудничеству дилеров!</h3>

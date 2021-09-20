@@ -1,10 +1,14 @@
 /* stylelint-disable */
 
 .slider {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
 @media (min-width: @tablet-width) {
-    width: 100%;
-    margin: 0;
+    width: 100vw;
     padding: 0;
+    margin: 0;
     background-color: #eaeaea;
   }
 
@@ -18,8 +22,15 @@
 }
 
 .slider .wrapper {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 30px;
+    }
+
   @media (min-width: @desktop-width) {
-    min-width: 750px;
+    min-width: 700px;
     width: 50%;
   }
 }
@@ -28,6 +39,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  margin: 0;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -43,10 +56,12 @@
 }
 
 .slider__image {
-  min-width: 320px;
   width: 100%;
+  min-width: 311px;
   height: 232px;
-  margin-bottom: 27px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 28px;
 
   @media (min-width: @tablet-width) {
     position: absolute;
@@ -59,7 +74,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 50% - 52px;
+    left: 50% - 57px;
     top: -215px;
     min-width: 690px;
     width: 90%;
@@ -70,8 +85,9 @@
 .slider__result {
   position: relative;
   width: 80%;
-  padding-left: 0;
-  padding-right: 0;
+  min-height: 24px;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
   font-family: "Oswald", "Arial", sans-serif;
@@ -94,8 +110,18 @@
   }
 
   @media (min-width: @desktop-width) {
+    width: 92%;
+    padding-top: 3px;
+    padding-left: 0;
+    padding-right: 6px;
     margin-bottom: 55px;
   }
+}
+
+.slider__before,
+.slider__after {
+  min-height: 24px;
+  margin-top: 2px
 }
 
 .slider__before::before{
@@ -111,7 +137,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 5%;
+    left: 2%;
   }
 }
 
@@ -135,7 +161,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 87%;
+    left: 89%;
   }
 }
 

@@ -1,7 +1,9 @@
 .example {
   padding: 20px;
   padding-bottom: 37px;
-  padding-top: 25px;
+  padding-top: 26px;
+  margin: 0;
+  margin-top: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -26,20 +28,28 @@
 }
 
 .example__title-wrapper {
-  margin-bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 40px;
+    margin: 0 30px;
+    margin-bottom: 42px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 50%;
+    min-width: 1220px;
+    width: 84.7%;
+    margin: 0 auto;
     margin-bottom: 74px;
   }
 }
 
 .example__title {
-  display: inline;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -66,11 +76,17 @@
 }
 
 .example__wrapper-two-sections {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
   @media (min-width: @desktop-width) {
     display: grid;
     grid-template-columns: 44% 54.5%;
     gap: 0;
-    width: 100%;
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;
     min-height: 445px;
     padding-top: 20px;
     background-color: #f2f2f2;
@@ -78,6 +94,9 @@
 }
 
 .example__wrapper-section {
+  width: 100%;
+  margin-bottom: 42px;
+
   @media (min-width: @desktop-width) {
     padding-top: 17px;
     background-color: #f2f2f2;
@@ -85,7 +104,7 @@
 }
 
 .example-wrapper {
-  margin-bottom: 8px;
+  padding: 0;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 255px;
@@ -101,26 +120,32 @@
 }
 
 .example__text {
+  display: inline-block;
+  min-height: 108px;
+  padding: 0;
   padding-top: 20px;
-  margin-bottom: 29px;
+  margin: 0;
+  margin-bottom: 27px;
   font-family: "Arial", sans-serif;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
+  -webkit-line-height: 20px;
   line-height: 18px;
   color: #444444;
 
   @media (min-width: @tablet-width) {
     width: 97%;
-    margin-bottom: 45px;
+    margin-bottom: 14px;
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: @desktop-width) {
     width: 436px;
+    padding-top: 32px;
     margin-left: 9%;
-    margin-bottom: 57px;
+    margin-bottom: 45px;
   }
 }
 
@@ -129,7 +154,6 @@
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  margin-bottom: 30px;
   list-style: none;
 
   @media (min-width: @tablet-width) {
@@ -145,6 +169,8 @@
 }
 
 .example__item {
+  padding: 0;
+  margin: 0;
   margin-right: auto;
 
   @media (min-width: @tablet-width) {
@@ -162,8 +188,6 @@
 }
 
 .example__result {
-  margin-bottom: 27px;
-
   @media (min-width: @tablet-width) {
     padding-top: 20px;
   }
